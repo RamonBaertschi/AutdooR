@@ -10,10 +10,13 @@
         "com.wikitude.phonegap.WikitudePlugin": {
             "PACKAGE_NAME": "com.fabiopitta.arsample"
         },
-        "cordova-plugin-whitelist": {
+        "cordova-plugin-camera": {
             "PACKAGE_NAME": "com.fabiopitta.arsample"
         },
-        "cordova-plugin-camera": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.fabiopitta.arsample"
+        },
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.fabiopitta.arsample"
         }
     },
