@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.fabiopitta.arsample" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>ARProject</name>
+    <name>fabruzz</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
@@ -24,4 +24,5 @@
     </platform>
     <engine name="android" spec="^6.3.0" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
+     <plugin name="cordova-plugin-camera" spec="^3.0.0" />
 </widget>
