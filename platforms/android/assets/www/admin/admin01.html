@@ -9,22 +9,23 @@
 
   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 
-  <!-- <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/phonon.css">
 
 
 
 </head>
 
 <body>
-
-  <header>
-    <a href="../index.html"><button>Zurück</button></a>
-    <h1>Spiel erstellen</h1>
-  </header>
-
-
-  
+    <pagetwo class="app-page">
+        <header class="header-bar">
+            <div class="left">
+                <button class="btn pull-left icon icon-arrow-back" data-navigation="$previous-page"></button>
+                <h1 class="title">Page Two</h1>
+            </div>
+        </header>
+        <div class="content">
 
       <form name="spiel">
         <label>Gib deinen Namen ein:</label>
@@ -39,12 +40,13 @@
 
       </form>
 
-
+</div>
+</pagetwo>
    
 
-  <!-- phantom library, needed for Cordova api calls, added during build -->
-  <script type="text/javascript" src="cordova.js"></script>
-  <script type="text/javascript" src="../js/index.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+<script type="text/javascript" src="../js/phonon.js"></script>
   
  
 </body>
