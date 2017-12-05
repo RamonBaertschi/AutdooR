@@ -52,13 +52,14 @@ var app = {
     // Wikitude
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
-    app.wikitudePlugin = cordova.require("com.wikitude.phonegap.WikitudePlugin.WikitudePlugin");
-    var launchDemoButton = document.getElementById('launch-demo');
-    launchDemoButton.onclick = function() {
-      app.loadARchitectWorld();
-    }
-
-    loadARchitectWorld : function() {
+    onDeviceReady : function() {
+      app.wikitudePlugin = cordova.require("com.wikitude.phonegap.WikitudePlugin.WikitudePlugin");
+      var launchDemoButton = document.getElementById('launch-demo');
+      launchDemoButton.onclick = function() {
+        app.loadARchitectWorld();
+      }
+    },
+    loadARchitectWorld: function() {
       app.wikitudePlugin.isDeviceSupported(function() {
         app.wikitudePlugin.loadARchitectWorld(function successFn(loadedURL) {}, function errorFn(error) {
           alert('Loading AR web view failed: ' + error);
