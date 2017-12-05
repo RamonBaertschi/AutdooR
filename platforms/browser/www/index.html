@@ -7,29 +7,36 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/phonon.css">
         <title>AutdooR</title>
     
     </head>
     <body>
-        <div class="app">
-             <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
-    
+            <home data-page="true">
+                    <header class="header-bar">
+                            <div class="center">
+                                <h1 class="title">AutdooR</h1>
+                            </div>
+                        </header>
+                        <div class="content">
+            
            
-            <div id="deviceready" class="blink">
-                <p class="event listening"></p>
-              <p class="event received"></p>
-                <button id="kamera">Kamera</button>
-            </div>
 
             <a href="admin/admin01.html">
                 <button>Spiel erstellen</button>
               </a>
               
+              <a href="teilnehmer/teilnehmer01.html">
+                <button>Spiel teilnehmen</button>
+              </a>
+              
+              <button>Anleitung</button>
+</div>
 
-
-        </div>
+            </home>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/phonon.js"></script>
 
     </body>
 </html>
