@@ -12,10 +12,9 @@
   <!-- <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">-->
 
-<!-- Eigene CSS Definitionen -->
-<link href="css/index.css" rel="stylesheet">
-
- 
+  <!-- Eigene CSS Definitionen -->
+  <link rel="stylesheet" type="text/css" href="../css/index.css">
+  <link rel="stylesheet" type="text/css" href="../css/mini-default.css">
 </head>
 
 <body>
@@ -26,22 +25,22 @@
 
 
 
-      <h1>Erfasse einen Hinweis</h1>
-      <button id="text">Text erfassen</button>
-      
-<!-- Muss genau so bleiben-->
-      <div id="deviceready" class="blink">
-        <p class="event listening"></p>
-      <p class="event received"></p>
-        <button id="kamera" class="btn">Kamera</button>
-    </div>
+  <h1>Erfasse einen Hinweis</h1>
+  <button>Text erfassen</button>
+
+  <!-- Muss genau so bleiben-->
+  <div id="deviceready" class="blink">
+    <p class="event listening"></p>
+    <p class="event received"></p>
+    <button id="kamera">Kamera</button>
+  </div>
 
 
 
   <!-- phantom library, needed for Cordova api calls, added during build -->
   <script type="text/javascript" src="cordova.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
-  
+  <script type="text/javascript" src="../js/index.js"></script>
+
 
 
 
