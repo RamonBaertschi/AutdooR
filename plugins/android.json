@@ -9,12 +9,6 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.fabiopitta.arsample"
-    },
-    "cordova-plugin-camera": {
-      "PACKAGE_NAME": "com.fabiopitta.arsample"
-    },
-    "cordova-plugin-device": {
-      "PACKAGE_NAME": "com.fabiopitta.arsample"
     }
   },
   "dependent_plugins": {}
