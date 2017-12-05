@@ -29,7 +29,7 @@ var app = {
   onDeviceReady: function() {
     this.receivedEvent('deviceready');
 
-    // Kamera
+    /* Kamera
     document.getElementById("kamera").addEventListener("click", cameraTakePicture);
 
     function cameraTakePicture() {
@@ -48,17 +48,18 @@ var app = {
         alert('Failed because: ' + message);
       }
     }
+    */
 
     // Wikitude
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
-    onDeviceReady : function() {
-      app.wikitudePlugin = cordova.require("com.wikitude.phonegap.WikitudePlugin.WikitudePlugin");
-      var launchDemoButton = document.getElementById('launch-demo');
-      launchDemoButton.onclick = function() {
-        app.loadARchitectWorld();
-      }
+
+    app.wikitudePlugin = cordova.require("com.wikitude.phonegap.WikitudePlugin.WikitudePlugin");
+    var launchDemoButton = document.getElementById('launch-demo');
+    launchDemoButton.onclick = function() {
+      app.loadARchitectWorld();
     }
+
     loadARchitectWorld : function() {
       app.wikitudePlugin.isDeviceSupported(function() {
         app.wikitudePlugin.loadARchitectWorld(function successFn(loadedURL) {}, function errorFn(error) {
