@@ -48,6 +48,7 @@ var app = {
             alert('Failed because: ' + message);
           }
         }
+
     },
 
     // Update DOM on a Received Event
