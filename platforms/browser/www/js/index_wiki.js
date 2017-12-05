@@ -19,48 +19,26 @@
 var app = {
   // Application Constructor
   initialize: function() {
-    document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
+    this.bindEvents();
   },
-
+  // Bind Event Listeners
+  //
+  // Bind any events that are required on startup. Common events are:
+  // 'load', 'deviceready', 'offline', and 'online'.
+  bindEvents: function() {
+    document.addEventListener('deviceready', this.onDeviceReady, false);
+  },
   // deviceready Event Handler
   //
-  // Bind any cordova events here. Common events are:
-  // 'pause', 'resume', etc.
+  // The scope of 'this' is the event. In order to call the 'receivedEvent'
+  // function, we must explicitly call 'app.receivedEvent(...);'
   onDeviceReady: function() {
-    this.receivedEvent('deviceready');
-
-    /* Kamera
-    document.getElementById("kamera").addEventListener("click", cameraTakePicture);
-
-    function cameraTakePicture() {
-      navigator.camera.getPicture(onSuccess, onFail, {
-        quality: 100,
-        destinationType: Camera.DestinationType.DATA_URL,
-        sourceType: Camera.PictureSourceType.CAMERA
-      });
-
-      function onSuccess(imageData) {
-        var image = document.getElementById('myImage');
-        image.src = "data:image/jpeg;base64," + imageData;
-      }
-
-      function onFail(message) {
-        alert('Failed because: ' + message);
-      }
-    }
-    */
-
-    // Wikitude
-    // The scope of 'this' is the event. In order to call the 'receivedEvent'
-    // function, we must explicitly call 'app.receivedEvent(...);'
-
     app.wikitudePlugin = cordova.require("com.wikitude.phonegap.WikitudePlugin.WikitudePlugin");
     var launchDemoButton = document.getElementById('launch-demo');
     launchDemoButton.onclick = function() {
       app.loadARchitectWorld();
     }
   },
-
   loadARchitectWorld: function() {
     app.wikitudePlugin.isDeviceSupported(function() {
       app.wikitudePlugin.loadARchitectWorld(function successFn(loadedURL) {}, function errorFn(error) {
@@ -69,19 +47,5 @@ var app = {
     }, function(errorMessage) {
       alert(errorMessage);
     }, ['2d_tracking']);
-  },
-
-  // Update DOM on a Received Event
-  receivedEvent: function(id) {
-    var parentElement = document.getElementById(id);
-    var listeningElement = parentElement.querySelector('.listening');
-    var receivedElement = parentElement.querySelector('.received');
-
-    listeningElement.setAttribute('style', 'display:none;');
-    receivedElement.setAttribute('style', 'display:block;');
-
-    console.log('Received Event: ' + id);
   }
 };
-
-app.initialize();
