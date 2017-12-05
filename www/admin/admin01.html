@@ -13,13 +13,12 @@
 </head>
 
 <body>
+    <div class="app">
   <header>
 
-    <h1 class="title">AutdooR</h1>
+    <h1>AutdooR</h1>
 
-  </header>
-
-  <header>
+ 
     <a href="../index.html">
       <button>Zurück</button>
     </a>
@@ -28,22 +27,24 @@
 
   <form name="spiel">
     <label>Gib deinen Namen ein:</label>
-    <input type="text" name="leiter" placeholder="Spielleiter" required>
+    <input type="text" name="leiter" placeholder="Spielleiter" autofocus required>
 
     <label>Wie soll das Spiel heissen:</label>
     <input type="text" placeholder="Spiel Namen" required>
 
-    <a href="../admin/admin02.html">
-      <button>Spiel erstellen</button>
-    </a>
+    
 
   </form>
+
+  <a href="../admin/admin02.html">
+    <button>Spiel erstellen</button>
+  </a>
 
 
   <!-- phantom library, needed for Cordova api calls, added during build -->
   <script type="text/javascript" src="cordova.js"></script>
   <script type="text/javascript" src="../js/index.js"></script>
-
+</div>
 
 </body>
 
