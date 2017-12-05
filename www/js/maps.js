@@ -3,8 +3,6 @@ function initAutocomplete() {
           center: {lat: 47.566952, lng: 9.106098},
           zoom: 13,
           mapTypeId: 'roadmap',
-          draggable: true,
-          draggingCursor: 'move',
           streetViewControl: false,
           fullscreenControl: false,
           mapTypeControl: false
@@ -69,4 +67,14 @@ function initAutocomplete() {
           });
           map.fitBounds(bounds);
         });
+        map.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
+          
+                  @Override
+                  public void onMapClick(LatLng point) {
+                      // TODO Auto-generated method stub
+                      lstLatLngs.add(point);
+                      map.clear();
+                      map.addMarker(new MarkerOptions().position(point));
+                  }
+              });
       }
