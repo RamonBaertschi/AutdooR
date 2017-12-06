@@ -29,7 +29,7 @@ var app = {
   onDeviceReady: function() {
     this.receivedEvent('deviceready');
 
-    /* Kamera
+    // Kamera
     document.getElementById("kamera").addEventListener("click", cameraTakePicture);
 
     function cameraTakePicture() {
@@ -48,39 +48,6 @@ var app = {
         alert('Failed because: ' + message);
       }
     }
-    */
-
-    // Wikitude
-    // The scope of 'this' is the event. In order to call the 'receivedEvent'
-    // function, we must explicitly call 'app.receivedEvent(...);'
-
-    app.wikitudePlugin = cordova.require("com.wikitude.phonegap.WikitudePlugin.WikitudePlugin");
-    var launchDemoButton = document.getElementById('launch-demo');
-    launchDemoButton.onclick = function() {
-      app.loadARchitectWorld();
-    }
-
-    loadARchitectWorld : function() {
-      app.wikitudePlugin.isDeviceSupported(function() {
-        app.wikitudePlugin.loadARchitectWorld(function successFn(loadedURL) {}, function errorFn(error) {
-          alert('Loading AR web view failed: ' + error);
-        }, cordova.file.dataDirectory + 'www/pgday/index.html', ['2d_tracking'], {camera_position: 'back'});
-      }, function(errorMessage) {
-        alert(errorMessage);
-      }, ['2d_tracking']);
-    }
-  },
-
-  // Update DOM on a Received Event
-  receivedEvent: function(id) {
-    var parentElement = document.getElementById(id);
-    var listeningElement = parentElement.querySelector('.listening');
-    var receivedElement = parentElement.querySelector('.received');
-
-    listeningElement.setAttribute('style', 'display:none;');
-    receivedElement.setAttribute('style', 'display:block;');
-
-    console.log('Received Event: ' + id);
   }
 };
 

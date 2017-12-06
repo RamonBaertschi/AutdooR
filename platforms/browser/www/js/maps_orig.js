@@ -1,13 +1,13 @@
 function initAutocomplete() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 47.566952, lng: 9.106098},
+          zoom: 13,
+          mapTypeId: 'roadmap',
+          streetViewControl: false,
+          fullscreenControl: false,
+          mapTypeControl: false
 
-var map = new google.maps.Map(document.getElementById('map'), {
-         center: {lat: 47.566952, lng: 9.106098},
-         zoom: 13,          
-         mapTypeId: 'roadmap',
-         streetViewControl: false,
-         fullscreenControl: false,
-         mapTypeControl: false
-});
+        });
 
         // Create the search box and link it to the UI element.
         var input = document.getElementById('pac-input');
@@ -35,9 +35,13 @@ var map = new google.maps.Map(document.getElementById('map'), {
           });
           markers = [];
 
-         // For each place, get the icon, name and location.
+          // For each place, get the icon, name and location.
           var bounds = new google.maps.LatLngBounds();
           places.forEach(function(place) {
+            if (!place.geometry) {
+              console.log("Returned place contains no geometry");
+              return;
+            }
             var icon = {
               url: place.icon,
               size: new google.maps.Size(71, 71),
@@ -47,13 +51,12 @@ var map = new google.maps.Map(document.getElementById('map'), {
             };
 
             // Create a marker for each place.
-            markers.push(new google.maps.Marker({           
-              draggable: true,
+            markers.push(new google.maps.Marker({
               map: map,
               icon: icon,
               title: place.name,
               position: place.geometry.location
-            }));    
+            }));
 
             if (place.geometry.viewport) {
               // Only geocodes have viewport.
@@ -64,4 +67,14 @@ var map = new google.maps.Map(document.getElementById('map'), {
           });
           map.fitBounds(bounds);
         });
+        map.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
+          
+                  @Override
+                  public void onMapClick(LatLng point) {
+                      // TODO Auto-generated method stub
+                      lstLatLngs.add(point);
+                      map.clear();
+                      map.addMarker(new MarkerOptions().position(point));
+                  }
+              });
       }
