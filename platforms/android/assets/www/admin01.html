@@ -4,36 +4,36 @@
     <meta charset="utf-8">
     <title>Ratchet template page</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-
     <!-- <meta name="apple-mobile-web-app-capable" content="yes"> <meta name="apple-mobile-web-app-status-bar-style" content="black">-->
-
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/mini-default.css">
   </head>
 
   <body>
     <header>
-      <a href="index.html" role="button"></a>
-      Es geht los
+      <a href="index.html" role="button">Zurück</a>
     </header>
 
-    <form name="spiel">
-      <div>
-        <label>Gib deinen Namen ein:</label>
-        <input type="text" name="leiter" placeholder="Spielleiter" required="required">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <form action="admin02.html" method="post">
+            <div>
+              <label>Gib deinen Namen ein:</label>
+              <input type="text" name="leiter" placeholder="Spielleiter" required="required">
+            </div>
+            <div>
+              <label>Wie soll das Spiel heissen:</label>
+              <input type="text" placeholder="Spiel Namen" required="required">
+            </div>
+            <a href="admin02.html">
+              <button>Spiel erstellen</button>
+            </a>
+          </form>
+        </div>
       </div>
-      <div>
-        <label>Wie soll das Spiel heissen:</label>
-        <input type="text" placeholder="Spiel Namen" required="required">
-      </div>
-      <a href="admin02.html">
-        <button>Spiel erstellen</button>
-      </a>
-    </form>
+    </div>
 
-    <a href="admin02.html">
-      <button>Weiter...</button>
-    </a>
     <!-- phantom library, needed for Cordova api calls, added during build -->
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>

@@ -11,19 +11,24 @@
 
   <body>
     <header>
-      admin04
+      <a href="admin03.html" role="button">Zurück</a>
     </header>
 
-    <div>
-      <a href="admin05.html">
-        <button>Text erfassen</button>
-      </a>
-    </div>
-
-    <div id="deviceready">
-      <p class="event listening"></p>
-      <p class="event received"></p>
-      <button id="kamera">Bild/Video erfassen</button>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div>
+            <a href="admin05.html">
+              <button>Text erfassen</button>
+            </a>
+          </div>
+          <div id="deviceready">
+            <p class="event listening"></p>
+            <p class="event received"></p>
+            <button id="kamera">Bild/Video erfassen</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- phantom library, needed for Cordova api calls, added during build -->
