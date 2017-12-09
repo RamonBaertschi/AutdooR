@@ -1,44 +1,34 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ratchet template page</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes"> <meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/mini-default.css">
+  </head>
 
-<head>
+  <body>
+    <header>
+      admin04
+    </header>
 
-  <meta charset="utf-8">
-  <title>Ratchet template page</title>
+    <div>
+      <a href="admin05.html">
+        <button>Text erfassen</button>
+      </a>
+    </div>
 
+    <div id="deviceready">
+      <p class="event listening"></p>
+      <p class="event received"></p>
+      <button id="kamera">Bild/Video erfassen</button>
+    </div>
 
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- phantom library, needed for Cordova api calls, added during build -->
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
 
-  <!-- <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">-->
-  <link rel="stylesheet" type="text/css" href="css/index.css">
-  <link rel="stylesheet" type="text/css" href="css/mini-default.css">
-
-</head>
-
-<body>
-
-  <header>
-
-Erfasse einen Hinweis
-  </header
-  
-  <a href="admin05.html">
-    <button>Text erfassen</button>
-  </a>
-
-  <div id="deviceready">
-    <p class="event listening"></p>
-  <p class="event received"></p>
-    <button id="kamera">Bild/Video erfassen</button>
-</div>
-
-  <!-- phantom library, needed for Cordova api calls, added during build -->
-  <script type="text/javascript" src="cordova.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
-
-
-
-</body>
-
+  </body>
 </html>
