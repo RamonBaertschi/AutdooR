@@ -32,26 +32,35 @@ var app = {
     // Kamera
     document.getElementById("kamera").addEventListener("click", cameraTakePicture);
 
+    // Wikitude
+    document.getElementById("wikitude").addEventListener("click", wikitudeTakePicture);
+
+    // Kamera
     function cameraTakePicture() {
       navigator.camera.getPicture(onSuccess, onFail, {
         quality: 100,
-        destinationType: Camera.DestinationType.DATA_URL,
-        sourceType: Camera.PictureSourceType.CAMERA
+        destinationType: Camera.DestinationType.FILE_URI,
+        sourceType: Camera.PictureSourceType.CAMERA,
+        // allowEdit: true,
+        saveToPhotoAlbum: true
       });
 
       function onSuccess(imageData) {
         var image = document.getElementById('myImage');
         image.src = "data:image/jpeg;base64," + imageData;
-        // Neue Seite laden. Funktioniert leider nicht.
-        window.location.href = "http://www.google.com";
-
       }
 
       function onFail(message) {
         alert('Failed because: ' + message);
       }
+      // Neue Seite laden
+      window.location.href = "admin06.html";
     }
 
+    //Wikitude
+    function wikitudeTakePicture() {
+      alert("Hallo, ich bin Wikitude und funktioniere nicht");
+    }
   },
 
   // Update DOM on a Received Event
