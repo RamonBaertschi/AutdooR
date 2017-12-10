@@ -42,9 +42,9 @@ var app = {
       function onSuccess(imageData) {
         var image = document.getElementById('myImage');
         image.src = "data:image/jpeg;base64," + imageData;
-        /* Admin06 laden
-        document.getElementById("content").innerHTML = '<object type="text/html" data="admin06.html" ></object>';
-        */
+        // Neue Seite laden. Funktioniert leider nicht.
+        window.location.href = "http://www.google.com";
+
       }
 
       function onFail(message) {
