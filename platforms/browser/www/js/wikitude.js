@@ -28,14 +28,26 @@ var app = {
   // 'pause', 'resume', etc.
   onDeviceReady: function() {
     this.receivedEvent('deviceready');
-
-    // Wikitude
-    document.getElementById("wikitude").addEventListener("click", wikitudeTakePicture);
-
-    //Wikitude
-    function wikitudeTakePicture() {
-      alert("Hallo, ich bin Wikitude und funktioniere nicht");
+    app.wikitudePlugin = cordova.require("com.wikitude.phonegap.WikitudePlugin.WikitudePlugin");
+    var launchDemoButton = document.getElementById('launch-demo');
+    launchDemoButton.onclick = function() {
+      app.loadARchitectWorld();
     }
+    /* Wikitude
+    document.getElementById("wikitude").addEventListener("click", wikitudeTakePicture);
+    function wikitudeTakePicture() {
+    alert("Hallo, ich bin Wikitude und funktioniere nicht");
+    */
+  },
+
+  loadARchitectWorld: function() {
+    app.wikitudePlugin.isDeviceSupported(function() {
+      app.wikitudePlugin.loadARchitectWorld(function successFn(loadedURL) {}, function errorFn(error) {
+        alert('Loading AR web view failed: ' + error);
+      }, cordova.file.dataDirectory + 'www/pgday/index.html', ['2d_tracking'], {camera_position: 'back'});
+    }, function(errorMessage) {
+      alert(errorMessage);
+    }, ['2d_tracking']);
   },
 
   // Update DOM on a Received Event
