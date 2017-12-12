@@ -9,28 +9,7 @@ var data = {
   lat: null,
   lng: null
 };
-/*
-function makeInfoBox(controlDiv, map) {
-  // Set CSS for the control border.
-  var controlUI = document.createElement('div');
-  controlUI.style.boxShadow = 'rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px';
-  controlUI.style.backgroundColor = '#fff';
-  controlUI.style.border = '2px solid #fff';
-  controlUI.style.borderRadius = '2px';
-  controlUI.style.marginBottom = '22px';
-  controlUI.style.marginTop = '10px';
-  controlUI.style.textAlign = 'center';
-  controlDiv.appendChild(controlUI);
 
-  /* Set CSS for the control interior.
-  var controlText = document.createElement('div');
-  controlText.style.color = 'rgb(25,25,25)';
-  controlText.style.fontFamily = 'Roboto,Arial,sans-serif';
-  controlText.style.fontSize = '100%';
-  controlText.style.padding = '6px';
-  controlText.textContent = 'The map shows all clicks made in the last 10 minutes.';
-  controlUI.appendChild(controlText);
-}*/
 
 /**
 * Starting point for running the program. Authenticates the user.
@@ -71,15 +50,7 @@ function initAutocomplete() {
   });
 
 
-// Create the search box and link it to the UI element.
-var input = document.getElementById('pac-input');
-var searchBox = new google.maps.places.SearchBox(input);
-map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
-// Bias the SearchBox results towards current map's viewport.
-map.addListener('bounds_changed', function() {
-  searchBox.setBounds(map.getBounds());
-});
 
   // Listen for clicks and add the location of the click to firebase.
   map.addListener('click', function (e) {
