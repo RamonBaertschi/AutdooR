@@ -4,34 +4,34 @@
     <meta charset="utf-8">
     <title>Ratchet template page</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <!-- <meta name="apple-mobile-web-app-capable" content="yes"> <meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+    
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/mini-default.css">
   </head>
 
   <body>
     <header>
-      <a href="index.html" role="button">Zurück</a>
+      <a href="teilnehmer02.html" role="button">Zurück</a>
     </header>
 
     <div class="container">
       <div class="row">
         <div class="col-sm">
-          <form action="teilnehmer02.html" method="post">
-            <div>
-              <label>Spielnamen eingeben:</label>
-              <input type="text" name="spielname" placeholder="Spiel Namen" required="required">
-            </div>
-            <div>
-              <a href="teilnehmer02.html">
-                <button>Teilnehmen</button>
-              </a>
-            </div>
-          </form>
+         
+<h3>Wenn du denkst in der Nähe eines Hinweises (POI) zu sein, aktiviere die Kamera und versuche das 2D-Objekt zu erfassen.
+  Der Hinweis wird angezeigt, wenn du die Kamera in die richtige Richtung hälst.
+</h3>
+<h3>Hinweise werden in Form von einem Text, einem Bild oder einem Video eingeblendet</h3>
+
+
+<button id="kamera">Kamera</button>
+
+
         </div>
       </div>
     </div>
 
+  
     <!-- phantom library, needed for Cordova api calls, added during build -->
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
