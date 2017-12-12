@@ -51,7 +51,7 @@ var app = {
       }
 
       function onFail(message) {
-        alert('Failed because: ' + message);
+        alert('Fehlgeschlagen weil: ' + message);
       }
       // Neue Seite laden
       window.location.href = "admin06.html";
