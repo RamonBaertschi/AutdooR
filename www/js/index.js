@@ -54,7 +54,7 @@ var app = {
         alert('Fehlgeschlagen weil: ' + message);
       }
       // Neue Seite laden
-      window.location.href = "admin06.html";
+      window.location.href = "teilnehmer03.html";
     }
 
     //Wikitude
