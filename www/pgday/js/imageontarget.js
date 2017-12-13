@@ -12,7 +12,8 @@ var World = {
 			Important: If you replace the tracker file with your own, make sure to change the target name accordingly.
 			Use a specific target name to respond only to a certain target or use a wildcard to respond to any or a certain group of targets.
 		*/
-		this.tracker = new AR.ClientTracker("assets/tuer.wtc", {
+	
+		this.tracker = new AR.ClientTracker("assets/wegweiser.wtc", {
 			onLoaded: this.worldLoaded
 		});
 
