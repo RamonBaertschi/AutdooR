@@ -17,6 +17,10 @@ var World = {
 			onLoaded: this.worldLoaded
 		});
 
+		this.tracker2 = new AR.ClientTracker("assets/wald.wtc", {
+			onLoaded: this.worldLoaded
+		});
+
 		/*
 			The next step is to create the augmentation. In this example an image resource is created and passed to the AR.ImageDrawable. A drawable is a visual component that can be connected to an IR target (AR.Trackable2DObject) or a geolocated object (AR.GeoObject). The AR.ImageDrawable is initialized by the image and its size. Optional parameters allow for position it relative to the recognized target.
 		*/
@@ -38,12 +42,12 @@ var World = {
 		/*
 			The last line combines everything by creating an AR.Trackable2DObject with the previously created tracker, the name of the image target and the drawable that should augment the recognized image.
 			Please note that in this case the target name is a wildcard. Wildcards can be used to respond to any target defined in the target collection. If you want to respond to a certain target only for a particular AR.Trackable2DObject simply provide the target name as specified in the target collection.
-		*/
+		
 		var pageOne = new AR.Trackable2DObject(this.tracker, "*", {
 			drawables: {
 				cam: [samurai_eyes_animate, overlayOne]
 			}
-		});
+		});*/
 	},
 
 	worldLoaded: function worldLoadedFn() {
