@@ -1984,7 +1984,8 @@ mark.inline-block {
 
 .modal .card {
   margin: 0 auto;
-  max-height: 50vh;
+  margin-top: 8vh;
+  max-height: 80vh;
   overflow: auto;
 }
 
