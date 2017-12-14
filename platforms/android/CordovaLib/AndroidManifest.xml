@@ -22,4 +22,6 @@
     <uses-sdk android:minSdkVersion="14" />
     <activity android:name=".AutdooR"
 android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+<activity android:name=".AutdooR"
+android:theme="@android:style/Theme.NoTitleBar"/>
 </manifest>
