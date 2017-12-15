@@ -2,7 +2,6 @@
 <html>
   <head>
     <meta charset="utf-8">
-   
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- <meta name="apple-mobile-web-app-capable" content="yes"> <meta name="apple-mobile-web-app-status-bar-style" content="black">-->
     <link rel="stylesheet" type="text/css" href="css/index.css">
@@ -17,12 +16,21 @@
     <div class="container">
       <div class="row">
         <div class="col-sm">
-            <h2>Los gehts...</h2>
-          <p>
-            Glückwunsch der Startpunkt für das Spiel wurde gesetzt. Jetzt geht es darum, einen ersten Hinweis für die Teilnehmer am Startpunkt zu hinterlegen. Erfasse einen Text, ein Photo oder ein Video, das die Teilnehmer zum nächsten Hinweis führen wird.
-          </p>
-          <a href="admin04.html">
-            <button>Hinweis erfassen</button>
+            <h2>Weiter gehts...</h2>
+          <h4>Erfasse mit der Kamera ein 2D-Objekt, dass die Teilnehmer finden müssen</h4>
+          <h4>Generiere anschliessend einen Hinweis in Form eines Textes, eines Bildes oder Video</h4>
+          <div>
+            <a href="admin05.html">
+              <button>Text erfassen</button>
+            </a>
+          </div>
+          <div id="deviceready">
+            <p class="event listening"></p>
+            <p class="event received"></p>
+            <button id="kamera">Bild/Video erfassen</button>
+          </div>
+          <a href="admin05.html">
+            <button>Spieleinladung versenden</button>
           </a>
         </div>
       </div>
@@ -33,5 +41,4 @@
     <script type="text/javascript" src="js/index.js"></script>
 
   </body>
-
 </html>

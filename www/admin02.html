@@ -1,43 +1,40 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+   
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes"> <meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/mini-default.css">
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
-  <meta name="mobile-web-app-capable" content="yes">
+  <body>
+    <header>
+      <a href="admin02.html" role="button">Zurück</a>
+    </header>
 
-  <link href="css/maps.css" rel="stylesheet">
-  <link href="css/index.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/mini-default.css">
-
-</head>
-
-<body>
-  <header>
-    <a href="admin01.html" role="button">Zurück</a>
-    <h2>Startpunkt setzen</h2>
-  </header>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-sm">
-        <div>
-          <input id="pac-input" class="controls" type="text" placeholder="Hallo AutdooR Freund: Such etwas">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+            <h2>Los gehts...</h2>
+          <p>
+            Glückwunsch der Startpunkt für das Spiel wurde gesetzt. Jetzt geht es darum, einen erstes Target Image und einen ersten Hinweis für die Teilnehmer 
+            am Startpunkt zu hinterlegen. 
+            Erfasse einen Text, ein Photo oder ein Video, nachdem du das Target Image gemacht hast. 
+            Der Hinweis führt die Teilnehmer zum nächsten Ziel.
+          </p>
+          <a href="admin03.html">
+            <button>Zum Erfassen</button>
+          </a>
         </div>
-        <div id="map"></div>
-        <a href="admin03.html">
-          <button id="startpunkt">Startpunkt setzen</button>
-        </a>
       </div>
     </div>
-  </div>
 
-  <script type="text/javascript" src="js/maps.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqu18ILDU1yshbjO3yKQqGlhMjaqcwf94&libraries=places&callback=initAutocomplete" async="async" defer="defer"></script>
-  <!-- phantom library, needed for Cordova api calls, added during build -->
-  <script type="text/javascript" src="cordova.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
+    <!-- phantom library, needed for Cordova api calls, added during build -->
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
 
-</body>
+  </body>
 
 </html>

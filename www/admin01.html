@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <!-- <meta name="apple-mobile-web-app-capable" content="yes"> <meta name="apple-mobile-web-app-status-bar-style" content="black">-->
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/mini-default.css">
-  </head>
 
-  <body>
-    <header>
-      <a href="index.html" role="button">Zurück</a>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
+  <meta name="mobile-web-app-capable" content="yes">
 
-    <div class="container">
-      <div class="row">
-        <div class="col-sm">
-            <h2>Spiel erstellen</h2>
-          <form action="admin02.html" method="post">
-            <div>
-              <label>Gib deinen Namen ein:</label>
-              <input type="text" name="leiter" placeholder="Spielleiter" required="required">
-            </div>
-            <div>
-              <label>Wie soll das Spiel heissen:</label>
-              <input type="text" placeholder="Spiel Namen" required="required">
-            </div>
-            <a href="admin02.html">
-              <button>Spiel erstellen</button>
-            </a>
-          </form>
+  <link href="css/maps.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/mini-default.css">
+
+</head>
+
+<body>
+  <header>
+    
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <h2>AutodooR</h2>
+        <div>
+          <input id="pac-input" class="controls" type="text" placeholder="Hallo AutdooR Freund: Such etwas">
         </div>
+        <div id="map"></div>
+        <a href="admin03.html">
+          <button id="startpunkt">Startpunkt setzen</button>
+        </a>
       </div>
     </div>
+  </div>
 
-    <!-- phantom library, needed for Cordova api calls, added during build -->
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-  </body>
+  <script type="text/javascript" src="js/maps.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqu18ILDU1yshbjO3yKQqGlhMjaqcwf94&libraries=places&callback=initAutocomplete" async="async" defer="defer"></script>
+  <!-- phantom library, needed for Cordova api calls, added during build -->
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+
 </html>

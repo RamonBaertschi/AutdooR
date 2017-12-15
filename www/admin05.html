@@ -16,13 +16,35 @@
     <div class="container">
       <div class="row">
         <div class="col-sm">
-          <form action="admin06.html" method="post">
-            <label>Erfasse einen Text</label>
-            <textarea name="texterfassen" rows="4" cols="40" placeholder="Text" required="required"></textarea>
-            <a href="admin04.html">
-              <button>Speichern</button>
-            </a>
-          </form>
+          <h2>Spieleinladung versenden</h2>
+          
+          <input id="modal-check" type="checkbox" />
+          <div class="modal" style="text-align:initial">
+            <div class="card">
+              <label for="modal-check" class="close"></label>
+              <h3 class="section double-padded">Anleitung</h3>
+              <div class="section double-padded">
+                
+  
+                <h5>Spiel-Nummer</h5>
+                <P>Kopiere die Spiel-Nummer und sende sie den gewünschten Teilnehmer</p>
+                
+                  <input type="text" value="Spiel-Nummer" id="spielNo">
+                <button onclick="copy()">Kopieren</button>
+<script>
+                function copy() {
+                  var copyText = document.getElementById("idNo");
+                  copyText.select();
+                  document.execCommand("Copy");
+                  alert("Copied the text: " + copyText.value);
+                }
+
+</script>
+  
+              </div>
+            </div>
+          </div> 
+
         </div>
       </div>
     </div>
