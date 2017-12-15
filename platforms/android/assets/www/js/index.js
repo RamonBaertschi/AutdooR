@@ -29,9 +29,9 @@ var app = {
   onDeviceReady: function() {
     this.receivedEvent('deviceready');
 
-    // Kamera
+    /*Kamera
     document.getElementById("kamera").addEventListener("click", cameraTakePicture);
-
+*/
     // Wikitude
     document.getElementById("wikitude").addEventListener("click", wikitudeTakePicture);
 
