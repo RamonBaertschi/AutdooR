@@ -15,7 +15,7 @@ var World = {
 			Use a specific target name to respond only to a certain target or use a wildcard to respond to any or a certain group of targets.
 		*/
 	
-		this.tracker = new AR.ClientTracker("assets/wegweiser.wtc",
+		this.tracker = new AR.ClientTracker("assets/wald.wtc",
 	
 		{
 			onLoaded: this.worldLoaded
@@ -35,10 +35,10 @@ var World = {
 		});
 		samurai_eyes_animate.animate([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25], 50, -1);
  
-		var phonegap_text = new AR.ImageResource("assets/phonegap.png");
+		var phonegap_text = new AR.ImageResource("assets/HinweisTxt.png");
 		var overlayOne = new AR.ImageDrawable(phonegap_text, 0.2, {
-			offsetX: 0,
-			offsetY: -0.70
+			offsetX: -0.015,
+			offsetY: -0.25
 		});
 
 		/*
