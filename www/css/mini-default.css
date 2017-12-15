@@ -22,10 +22,18 @@ html, * {
   font-size: 1rem;
 }
 
-body {
+html {
   margin: 0;
   color: #212121;
-  background: #f8f8f8;
+  background: linear-gradient(
+  rgba(231, 122, 17, 0.81), 
+  rgba(231, 168, 17, 2) 
+   
+  ),
+  url(../img/bg.jpg);
+  background-size:cover;
+height:100%;
+min-height:100%;
 }
 
 article, aside, section, figcaption, figure, main, details, menu {
