@@ -1,64 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <!-- <meta name="apple-mobile-web-app-capable" content="yes"> <meta name="apple-mobile-web-app-status-bar-style" content="black">-->
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/mini-default.css">
-  </head>
 
-  <body>
-    <header>
-      <a href="admin04.html" role="button">Zurück</a>
-    </header>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <!-- <meta name="apple-mobile-web-app-capable" content="yes"> <meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/mini-default.css">
+</head>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-sm">
-          <h2>Spieleinladung versenden</h2>
+<body>
+  <header>
+    <a href="admin04.html" role="button">Zurück</a>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <h2>Spieleinladung versenden</h2>
 
 
-          <div>
-              <label class="button" for="modal-check">Spiele-Nummer</label>
-            </div>
-            <br/>
-            <br/>
-          
-          <input id="modal-check" type="checkbox" />
-          <div class="modal" style="text-align:initial">
-            <div class="card">
-              <label for="modal-check" class="close"></label>
-              <h3 class="section double-padded">Anleitung</h3>
-              <div class="section double-padded">
-                
-  
-                <h5>Spiel-Nummer</h5>
-                <P>Kopiere die Spiel-Nummer und sende sie den gewünschten Teilnehmer</p>
-                
-                  <input type="text" value="Spiel-Nummer" id="spielNo">
-                <button onclick="copy()">Kopieren</button>
-<script>
-                function copy() {
-                  var copyText = document.getElementById("idNo");
-                  copyText.select();
-                  document.execCommand("Copy");
-                  alert("Copied the text: " + copyText.value);
-                }
+        <h5>Spiel-Nummer</h5>
+        <P>Kopiere die Spiel-Nummer und sende sie den gewünschten Teilnehmer</p>
 
-</script>
-  
-              </div>
-            </div>
-          </div> 
+        <input type="text" placeholder="Spiel-Nummer" id="spielNo">
+        <button onclick="copy()">Kopieren</button>
+        <script>
+          function copy() {
+            var copyText = document.getElementById("idNo");
+            copyText.select();
+            document.execCommand("Copy");
+            alert("Copied the text: " + copyText.value);
+          }
 
-        </div>
+        </script>
+
       </div>
     </div>
- 
-    <!-- phantom library, needed for Cordova api calls, added during build -->
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+  </div>
 
-  </body>
+
+
+  <!-- phantom library, needed for Cordova api calls, added during build -->
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+
 </html>
