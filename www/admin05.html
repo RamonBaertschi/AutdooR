@@ -11,7 +11,7 @@
 
 <body>
   <header>
-    <a href="admin04.html" role="button">Zurück</a>
+    <a href="admin03.html" role="button">Zurück</a>
   </header>
 
   <div class="container">
@@ -24,18 +24,18 @@
         <P>Kopiere die Spiel-Nummer und sende sie den gewünschten Teilnehmer</p>
 
 
+<input type="text" placeholder="Spiel-Nummer" id="spielNo">
+<button onclick="copySpiel()">Kopieren</button>
 
-        <input type="text" placeholder="Spiel-Nummer" id="spielNo">
-        <button onclick="copy()">Kopieren</button>
-        <script>
-          function copy() {
-            var copyText = document.getElementById("idNo");
-            copyText.select();
-            document.execCommand("Copy");
-            alert("Copied the text: " + copyText.value);
-          }
+<script>
+function copySpiel() {
+  var copyText = document.getElementById("spielNo");
+  copyText.select();
+  document.execCommand("Copy");
+  alert("Spiel-Nummer kopiert: " + copyText.value);
+}
+</script>
 
-        </script>
 
       </div>
     </div>
