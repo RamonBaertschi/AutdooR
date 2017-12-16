@@ -17,6 +17,11 @@ document.getElementById("startpunkt").addEventListener("click", function() {
   alert("Datenbank");
 })
 
+var data = {
+  lat: null,
+  lng: null
+};
+
 function initAutocomplete() {
 
   var map = new google.maps.Map(document.getElementById('map'), {
@@ -30,14 +35,6 @@ function initAutocomplete() {
     fullscreenControl: false,
     mapTypeControl: false
   });
-
-  //Fabio Pitta
-  var data = {
-    sender: null,
-    timestamp: null,
-    lat: null,
-    lng: null
-  };
 
   // Create the search box and link it to the UI element.
   var input = document.getElementById('pac-input');
