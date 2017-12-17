@@ -36,14 +36,24 @@
       </div>
     </div>
 
-    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase-firestore.js"></script>
     <script type="text/javascript" src="js/maps.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqu18ILDU1yshbjO3yKQqGlhMjaqcwf94&libraries=places&callback=initAutocomplete" async="async" defer="defer"></script>
     <!-- phantom library, needed for Cordova api calls, added during build -->
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase-firestore.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyARMSjdUYP-5vUVgtb0_rXqtq3kv772ygA",
+        authDomain: "testfabio-3a2e4.firebaseapp.com",
+        databaseURL: "https://testfabio-3a2e4.firebaseio.com",
+        projectId: "testfabio-3a2e4",
+        storageBucket: "testfabio-3a2e4.appspot.com",
+        messagingSenderId: "458824051953"
+      };
+      firebase.initializeApp(config);
+    </script>
   </body>
-
 </html>
