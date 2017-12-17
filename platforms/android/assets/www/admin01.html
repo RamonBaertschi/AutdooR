@@ -15,6 +15,7 @@
   <body>
     <header>
       <a href="index.html" role="button">Zurück</a>
+      <a href="admin02.html" role="button">Weiter</a>
     </header>
 
     <div class="container">
@@ -25,35 +26,24 @@
             <input id="pac-input" class="controls" type="text" placeholder="Hallo AutdooR Freund: Such etwas">
           </div>
           <div id="map"></div>
-          <a href="admin02.html">
-            <button id="startpunkt">Startpunkt setzen</button>
-          </a>
+          <button id="startpunkt">Startpunkt setzen</button>
           <div>
             <p>Koordinaten</p>
-            <p id="koordinaten"></p>
+            <p id="koordinaten1"></p>
+            <p id="koordinaten2"></p>
           </div>
         </div>
       </div>
     </div>
 
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase-firestore.js"></script>
     <script type="text/javascript" src="js/maps.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqu18ILDU1yshbjO3yKQqGlhMjaqcwf94&libraries=places&callback=initAutocomplete" async="async" defer="defer"></script>
     <!-- phantom library, needed for Cordova api calls, added during build -->
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase-firestore.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyARMSjdUYP-5vUVgtb0_rXqtq3kv772ygA",
-        authDomain: "testfabio-3a2e4.firebaseapp.com",
-        databaseURL: "https://testfabio-3a2e4.firebaseio.com",
-        projectId: "testfabio-3a2e4",
-        storageBucket: "testfabio-3a2e4.appspot.com",
-        messagingSenderId: "458824051953"
-      };
-      firebase.initializeApp(config);
-    </script>
+    <script type="text/javascript" src="js/firebase.js"></script>
+
   </body>
 </html>

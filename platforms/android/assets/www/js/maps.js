@@ -1,3 +1,17 @@
+// Initialize Firebase
+var config = {
+  apiKey: "AIzaSyARMSjdUYP-5vUVgtb0_rXqtq3kv772ygA",
+  authDomain: "testfabio-3a2e4.firebaseapp.com",
+  databaseURL: "https://testfabio-3a2e4.firebaseio.com",
+  projectId: "testfabio-3a2e4",
+  storageBucket: "testfabio-3a2e4.appspot.com",
+  messagingSenderId: "458824051953"
+};
+firebase.initializeApp(config);
+
+var firestore = firebase.firestore();
+var db;
+
 var data = {
   lat: null,
   lng: null
@@ -64,10 +78,20 @@ function initAutocomplete() {
         bounds.extend(place.geometry.location);
       }
 
-      document.getElementById("koordinaten").innerHTML = place.geometry.location;
+      document.getElementById("koordinaten1").innerHTML = place.geometry.location.lat();
+      document.getElementById("koordinaten2").innerHTML = place.geometry.location.lng();
+
+      document.getElementById("startpunkt").addEventListener("click", function() {
+        db = firestore.collection("spielname").doc("ortschaft").set({
+          koordinaten: {
+            Latitude: place.geometry.location.lat(),
+            Longitude: place.geometry.location.lng()
+          }
+        });
+        alert("Datenbank");
+      });
 
     });
-
     map.fitBounds(bounds);
   });
 }
