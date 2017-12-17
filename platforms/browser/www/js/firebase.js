@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-var app = {
+var appzwei = {
   // Application Constructor
   initialize: function() {
     document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
@@ -35,4 +35,4 @@ var app = {
   }
 };
 
-app.initialize();
+appzwei.initialize();
