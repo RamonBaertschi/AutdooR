@@ -12,11 +12,6 @@ firebase.initializeApp(config);
 var firestore = firebase.firestore();
 var db;
 
-var data = {
-  lat: null,
-  lng: null
-};
-
 function initAutocomplete() {
 
   var map = new google.maps.Map(document.getElementById('map'), {
@@ -88,9 +83,7 @@ function initAutocomplete() {
             Longitude: place.geometry.location.lng()
           }
         });
-        alert("Datenbank");
       });
-
     });
     map.fitBounds(bounds);
   });
