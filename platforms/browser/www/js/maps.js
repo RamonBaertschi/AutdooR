@@ -77,7 +77,7 @@ function initAutocomplete() {
       document.getElementById("koordinaten2").innerHTML = place.geometry.location.lng();
 
       document.getElementById("startpunkt").addEventListener("click", function() {
-        db = firestore.collection("spiel").doc().set({
+        db = firestore.collection("spiel").doc("test").set({
           koordinaten: {
             Latitude: place.geometry.location.lat(),
             Longitude: place.geometry.location.lng(),
