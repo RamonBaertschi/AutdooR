@@ -64,7 +64,7 @@ function initAutocomplete() {
       };
 
       // Create a marker for each place.
-      markers.push(new google.maps.Marker({draggable: true, map: map, icon: icon, title: place.name, position: place.geometry.location}));
+      markers.push(new google.maps.Marker({draggable: false, map: map, icon: icon, title: place.name, position: place.geometry.location}));
 
       if (place.geometry.viewport) {
         // Only geocodes have viewport.
@@ -77,10 +77,11 @@ function initAutocomplete() {
       document.getElementById("koordinaten2").innerHTML = place.geometry.location.lng();
 
       document.getElementById("startpunkt").addEventListener("click", function() {
-        db = firestore.collection("spielname").doc("ortschaft").set({
+        db = firestore.collection("spiel").doc().set({
           koordinaten: {
             Latitude: place.geometry.location.lat(),
-            Longitude: place.geometry.location.lng()
+            Longitude: place.geometry.location.lng(),
+            Datum: new Date()
           }
         });
       });

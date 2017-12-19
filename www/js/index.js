@@ -32,9 +32,6 @@ var app = {
     //Kamera
     document.getElementById("kamera").addEventListener("click", cameraTakePicture);
 
-    // Wikitude
-    document.getElementById("wikitude").addEventListener("click", wikitudeTakePicture);
-
     // Kamera
     function cameraTakePicture() {
       navigator.camera.getPicture(onSuccess, onFail, {
@@ -49,17 +46,13 @@ var app = {
         var image = document.getElementById('myImage');
         image.src = "data:image/jpeg;base64," + imageData;
       }
-
+      /*
       function onFail(message) {
         alert('Fehlgeschlagen weil: ' + message);
       }
+      /*
       /* Neue Seite laden
       window.location.href = "teilnehmer03.html";*/
-    }
-
-    //Wikitude
-    function wikitudeTakePicture() {
-      alert("Hallo, ich bin Wikitude und funktioniere nicht");
     }
   },
 
