@@ -15,4 +15,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <activity android:configChanges="orientation|keyboardHidden" android:screenOrientation="portrait">
+    </activity>
+    <preference name="orientation" value="portrait" />
 </widget>

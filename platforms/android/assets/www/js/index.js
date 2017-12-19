@@ -53,8 +53,8 @@ var app = {
       function onFail(message) {
         alert('Fehlgeschlagen weil: ' + message);
       }
-      // Neue Seite laden
-      window.location.href = "teilnehmer03.html";
+      /* Neue Seite laden
+      window.location.href = "teilnehmer03.html";*/
     }
 
     //Wikitude

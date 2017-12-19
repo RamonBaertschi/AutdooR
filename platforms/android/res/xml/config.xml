@@ -25,7 +25,11 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <activity android:configChanges="orientation|keyboardHidden" android:screenOrientation="portrait">
+    </activity>
     <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
+    <preference name="orientation" value="portrait" />
     <preference name="android-minSdkVersion" value="19" />
+    <preference name="Orientation" value="sensorPortrait" />
 </widget>

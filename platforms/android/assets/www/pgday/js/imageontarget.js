@@ -57,6 +57,11 @@ var World = {
 
 
 
+
+
+
+
+
 	worldLoaded: function worldLoadedFn() {
 		var message = " style='text-align: center; font-family:Arial, sans-serif;'";
 		document.getElementById('loadingMessage').innerHTML =
