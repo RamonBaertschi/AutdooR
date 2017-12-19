@@ -23,5 +23,6 @@
     <activity android:name=".AutdooR"
 android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
 <activity android:name=".AutdooR"
-android:theme="@android:style/Theme.NoTitleBar"/>
+android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait"
+   android:configChanges="orientation|keyboardHidden">/>
 </manifest>
