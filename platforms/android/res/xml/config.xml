@@ -29,7 +29,6 @@
     </activity>
     <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
-    <preference name="orientation" value="portrait" />
     <preference name="android-minSdkVersion" value="19" />
-    <preference name="Orientation" value="sensorPortrait" />
+    <preference name="orientation" value="portrait" />
 </widget>
