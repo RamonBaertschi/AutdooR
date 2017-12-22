@@ -44,7 +44,7 @@ var app = {
     app.wikitudePlugin.isDeviceSupported(function() {
       app.wikitudePlugin.loadARchitectWorld(function successFn(loadedURL) {}, function errorFn(error) {
         alert('Loading AR web view failed: ' + error);
-      }, cordova.file.dataDirectory + 'www/pgday/index.html', ['2d_tracking'], {camera_position: 'back'}, cordova.file.dataDirectory + 'www/pgday/index2.html', ['2d_tracking'], {camera_position: 'back'});
+      }, cordova.file.dataDirectory + 'www/experience/index.html', ['2d_tracking'], {camera_position: 'back'}, cordova.file.dataDirectory + 'www/experience/index2.html', ['2d_tracking'], {camera_position: 'back'});
     }, function(errorMessage) {
       alert(errorMessage);
     }, ['2d_tracking']);
