@@ -10,7 +10,6 @@ var config = {
 firebase.initializeApp(config);
 
 var firestore = firebase.firestore();
-var db;
 
 function initAutocomplete() {
 
@@ -77,13 +76,21 @@ function initAutocomplete() {
       document.getElementById("koordinaten2").innerHTML = place.geometry.location.lng();
 
       document.getElementById("startpunkt").addEventListener("click", function() {
-        db = firestore.collection("spiel").doc("test").set({
+        firestore.collection("spiel").doc("test").set({
           koordinaten: {
             Latitude: place.geometry.location.lat(),
             Longitude: place.geometry.location.lng(),
             Datum: new Date()
           }
         });
+      });
+
+      document.getElementById("laden").addEventListener("click", function() {
+        firestore.collection("spiel").doc("test").get().then(function(doc) {
+          const myData = doc.data();
+          document.getElementById("koordinat1").innerHTML = myData.koordinaten.Latitude;
+          document.getElementById("koordinat2").innerHTML = myData.koordinaten.Longitude;
+        })
       });
     });
     map.fitBounds(bounds);
