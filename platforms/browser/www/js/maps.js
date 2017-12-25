@@ -85,13 +85,21 @@ function initAutocomplete() {
           }
         });
       });
+      document.getElementById("laden").addEventListener("click", function() {
+        firestore.collection("spiel").doc("test").get().then(function(doc) {
+          var myData = doc.data();
+          document.getElementById("koordinat1").innerHTML = myData.koordinaten.Latitude;
+          document.getElementById("koordinat2").innerHTML = myData.koordinaten.Longitude;
+        })
+      });
 
-      // Koordinaten von Firebase laden (automatisch)
+      /* Koordinaten von Firebase laden (automatisch)
       firestore.collection("spiel").doc("test").onSnapshot(function(doc) {
         const myData = doc.data();
         document.getElementById("koordinat1").innerHTML = myData.koordinaten.Latitude;
         document.getElementById("koordinat2").innerHTML = myData.koordinaten.Longitude;
       })
+      */
     });
     map.fitBounds(bounds);
   });
