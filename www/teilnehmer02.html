@@ -25,10 +25,17 @@
           <a href="teilnehmer03.html">
             <button id="startpunkt">Spiel starten</button>
           </a>
+          <div>
+            <p>Koordinaten laden:</p>
+            <p id="koordinat1"></p>
+            <p id="koordinat2"></p>
+          </div>
         </div>
       </div>
     </div>
 
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase-firestore.js"></script>
     <script type="text/javascript" src="js/maps.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqu18ILDU1yshbjO3yKQqGlhMjaqcwf94&libraries=places&callback=initAutocomplete" async="async" defer="defer"></script>
     <!-- phantom library, needed for Cordova api calls, added during build -->

@@ -75,6 +75,7 @@ function initAutocomplete() {
       document.getElementById("koordinaten1").innerHTML = place.geometry.location.lat();
       document.getElementById("koordinaten2").innerHTML = place.geometry.location.lng();
 
+      // Koordinaten in Firebase speichern
       document.getElementById("startpunkt").addEventListener("click", function() {
         firestore.collection("spiel").doc("test").set({
           koordinaten: {
@@ -85,13 +86,12 @@ function initAutocomplete() {
         });
       });
 
-      document.getElementById("laden").addEventListener("click", function() {
-        firestore.collection("spiel").doc("test").get().then(function(doc) {
-          const myData = doc.data();
-          document.getElementById("koordinat1").innerHTML = myData.koordinaten.Latitude;
-          document.getElementById("koordinat2").innerHTML = myData.koordinaten.Longitude;
-        })
-      });
+      // Koordinaten von Firebase laden (automatisch)
+      firestore.collection("spiel").doc("test").onSnapshot(function(doc) {
+        const myData = doc.data();
+        document.getElementById("koordinat1").innerHTML = myData.koordinaten.Latitude;
+        document.getElementById("koordinat2").innerHTML = myData.koordinaten.Longitude;
+      })
     });
     map.fitBounds(bounds);
   });
