@@ -46,11 +46,11 @@ var app = {
         var image = document.getElementById('myImage');
         image.src = "data:image/jpeg;base64," + imageData;
       }
-      /*
+
       function onFail(message) {
         alert('Fehlgeschlagen weil: ' + message);
       }
-      /*
+
       /* Neue Seite laden
       window.location.href = "teilnehmer03.html";*/
     }

@@ -14,8 +14,7 @@
   <body>
     <header>
       <a href="index.html" role="button">Zurück</a>
-      <!-- <a href="admin02.html" role="button">Weiter</a> -->
-      <a href="teilnehmer02.html" role="button">Weiter</a>
+      <a href="admin02.html" role="button">Weiter</a>
     </header>
 
     <div class="container">
@@ -26,21 +25,22 @@
             <input id="pac-input" class="controls" type="text" placeholder="Hallo AutdooR Freund: Such etwas">
           </div>
           <div id="map"></div>
-          <button id="startpunkt">Startpunkt setzen</button>
+          <div>
+            <button id="startpunktSetzen">Startpunkt setzen</button>
+          </div>
           <div>
             <p>Koordinaten anzeigen:</p>
             <p id="koordinaten1"></p>
             <p id="koordinaten2"></p>
           </div>
-
         </div>
       </div>
     </div>
 
     <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase-firestore.js"></script>
-    <script type="text/javascript" src="js/maps.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqu18ILDU1yshbjO3yKQqGlhMjaqcwf94&libraries=places&callback=initAutocomplete" async="async" defer="defer"></script>
+    <script type="text/javascript" src="js/mapsspeichern.js"></script>
     <!-- phantom library, needed for Cordova api calls, added during build -->
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>

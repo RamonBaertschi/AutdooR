@@ -121,6 +121,10 @@ h1 {
   -webkit-animation: fade 3000ms infinite;
 }
 /*Button unter Google Maps Karte*/
-#startpunkt {
-  margin-top: 250px;
+#startpunktSetzen {
+  margin-top: 300px;
+}
+
+#testLaden {
+  margin-top: 300px;
 }
