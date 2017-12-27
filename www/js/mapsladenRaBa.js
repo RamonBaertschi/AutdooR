@@ -26,10 +26,7 @@ function initAutocomplete() {
 
   var coords = getCoords();
 
-  var myLatLng = {
-    lat: 45.363,
-    lng: 9.044
-  };
+
 
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 10,
