@@ -11,16 +11,21 @@ firebase.initializeApp(config);
 
 var firestore = firebase.firestore();
 
-firestore.collection("spiel").doc("test").onSnapshot(function(doc) {
-  var myData = doc.data();
-  var x = myData.koordinaten.Latitude;
-  var y = myData.koordinaten.Longitude;
-  return new google.maps.LatLng(x, y);
-  alert(x);
-  alert(y);
-})
+function getCoords() {
+  firestore.collection("spiel").doc("test").onSnapshot(function(doc) {
+    var myData = doc.data();
+    var x = myData.koordinaten.Latitude;
+    var y = myData.koordinaten.Longitude;
+    alert(x);
+    alert(y);
+    return new google.maps.LatLng(x, y);
+  })
+}
 
 function initAutocomplete() {
+
+  var coords = getCoords();
+
   var myLatLng = {
     lat: 45.363,
     lng: 9.044
@@ -32,8 +37,8 @@ function initAutocomplete() {
     streetViewControl: false,
     fullscreenControl: false,
     mapTypeControl: false,
-    center: myLatLng
+    center: coords
   });
 
-  var marker = new google.maps.Marker({position: myLatLng, map: map});
+  var marker = new google.maps.Marker({position: coords, map: map});
 }
