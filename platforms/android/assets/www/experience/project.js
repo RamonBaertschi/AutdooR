@@ -46,6 +46,71 @@ var projectJSONOffline =
             ]
         },
         {
+            "name": "Tuer",
+            "augmentations": [
+                {
+                    "type": "VideoDrawable",
+                    "height": 0.3,
+                    "uri": "augmentation-assets/2618126_Tuer/5a435106d52a3517171b5026/video.mp4",
+                    "targetId": "5a4350f1eac9a21719f7a4c4",
+                    "externalUri": false,
+                    "firstFrameImgUrlFileSize": 1384133,
+                    "firstFrameAlphaImgUrlFileSize": 0,
+                    "modDat": 1514361094850,
+                    "creDat": 1514361094850,
+                    "properties": {
+                        "name": "HinweisVideo",
+                        "firstFrameImgUrl": "augmentation-assets/2618126_Tuer/5a435106d52a3517171b5026/firstFrameImg.png",
+                        "translate": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        }
+                    },
+                    "fileSize": 2246489,
+                    "id": "5a435106d52a3517171b5026"
+                },
+                {
+                    "type": "VideoDrawable",
+                    "height": 0.3,
+                    "uri": "augmentation-assets/2618126_Tuer/5a4357820f142416f8f4e3e5/video.mp4?dl=0",
+                    "targetId": "5a4350f1eac9a21719f7a4c4",
+                    "externalUri": true,
+                    "firstFrameImgUrlFileSize": 0,
+                    "firstFrameAlphaImgUrlFileSize": 0,
+                    "modDat": 1514362754255,
+                    "creDat": 1514362754255,
+                    "properties": {
+                        "firstFrameImgUrl": "augmentation-assets/2618126_Tuer/5a4357820f142416f8f4e3e5/firstFrameImg.jpg"
+                    },
+                    "fileSize": 0,
+                    "id": "5a4357820f142416f8f4e3e5"
+                },
+                {
+                    "type": "VideoDrawable",
+                    "height": 0.3,
+                    "uri": "augmentation-assets/2618126_Tuer/5a437105eac9a21719f7a59d/video.mp4",
+                    "targetId": "5a4350f1eac9a21719f7a4c4",
+                    "externalUri": false,
+                    "firstFrameImgUrlFileSize": 1384133,
+                    "firstFrameAlphaImgUrlFileSize": 0,
+                    "modDat": 1514369285457,
+                    "creDat": 1514369285457,
+                    "properties": {
+                        "name": "HinweisVideo",
+                        "firstFrameImgUrl": "augmentation-assets/2618126_Tuer/5a437105eac9a21719f7a59d/firstFrameImg.png",
+                        "translate": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        }
+                    },
+                    "fileSize": 2246489,
+                    "id": "5a437105eac9a21719f7a59d"
+                }
+            ]
+        },
+        {
             "name": "Wegweiser",
             "augmentations": [
                 {
@@ -86,34 +151,34 @@ var projectJSONOffline =
     "type": "ImageTargetCollection",
     "wtcFiles": [
         {
-            "url": "augmentation-trackers/4.1/tracker.wtc",
-            "nrOfTargets": 3,
             "version": "4.1",
-            "creDat": 1513876720839
-        },
-        {
+            "nrOfTargets": 4,
             "url": "augmentation-trackers/4.1/tracker.wtc",
-            "nrOfTargets": 3,
+            "creDat": 1514369096784
+        },
+        {
             "version": "5.0",
-            "creDat": 1513876720839
+            "nrOfTargets": 4,
+            "url": "augmentation-trackers/4.1/tracker.wtc",
+            "creDat": 1514369096784
         },
         {
-            "url": "https://s3-eu-west-1.amazonaws.com/target-manager-live/6cc8db4cc60ae7ce8036d159c3d80c1d/5a3bea9aeac9a21719f799b4/studio/wtc/4.1/r1cx6wKfM.wtc",
-            "nrOfTargets": 3,
             "version": "5.1",
-            "creDat": 1513876720839
+            "nrOfTargets": 4,
+            "url": "https://s3-eu-west-1.amazonaws.com/target-manager-live/6cc8db4cc60ae7ce8036d159c3d80c1d/5a3bea9aeac9a21719f799b4/studio/wtc/4.1/rJ7UeeZXM.wtc",
+            "creDat": 1514369096784
         },
         {
-            "url": "https://s3-eu-west-1.amazonaws.com/target-manager-live/6cc8db4cc60ae7ce8036d159c3d80c1d/5a3bea9aeac9a21719f799b4/studio/wtc/4.1/r1cx6wKfM.wtc",
-            "nrOfTargets": 3,
             "version": "5.2",
-            "creDat": 1513876720839
+            "nrOfTargets": 4,
+            "url": "https://s3-eu-west-1.amazonaws.com/target-manager-live/6cc8db4cc60ae7ce8036d159c3d80c1d/5a3bea9aeac9a21719f799b4/studio/wtc/4.1/rJ7UeeZXM.wtc",
+            "creDat": 1514369096784
         },
         {
-            "url": "https://s3-eu-west-1.amazonaws.com/target-manager-live/6cc8db4cc60ae7ce8036d159c3d80c1d/5a3bea9aeac9a21719f799b4/studio/wtc/4.1/r1cx6wKfM.wtc",
-            "nrOfTargets": 3,
             "version": "5.3",
-            "creDat": 1513876720839
+            "nrOfTargets": 4,
+            "url": "https://s3-eu-west-1.amazonaws.com/target-manager-live/6cc8db4cc60ae7ce8036d159c3d80c1d/5a3bea9aeac9a21719f799b4/studio/wtc/4.1/rJ7UeeZXM.wtc",
+            "creDat": 1514369096784
         }
     ],
     "settings": {
