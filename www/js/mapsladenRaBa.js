@@ -17,13 +17,15 @@ function getCoords() {
     var x = myData.koordinaten.Latitude;
     var y = myData.koordinaten.Longitude;
     alert(x);
-    return new google.maps.LatLng(x, y);
+    alert(y);
   })
+  return new google.maps.LatLng(13, 5);
 }
 
-function initMap(x, y) {
-  alert("Google Maps");
+function initMap() {
+
   var coords = getCoords();
+  alert(coords);
 
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 10,
