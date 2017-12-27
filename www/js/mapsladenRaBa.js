@@ -16,13 +16,14 @@ function getCoords() {
     var myData = doc.data();
     var x = myData.koordinaten.Latitude;
     var y = myData.koordinaten.Longitude;
-    alert(x);
-    alert(y);
-    return new google.maps.LatLng(x, y);
+    //alert(x);
+    //alert(y);
+    var coords = new google.maps.LatLng(x, y);
+    initAutocomplete(x, y);
   })
 }
 
-function initAutocomplete() {
+function initAutocomplete(x, y) {
 
   var coords = getCoords();
 
@@ -32,8 +33,11 @@ function initAutocomplete() {
     streetViewControl: false,
     fullscreenControl: false,
     mapTypeControl: false,
-    center: coords
+    center: new google.maps.LatLng(x, y)
   });
 
-  marker = new google.maps.Marker({position: coords, map: map});
+  marker = new google.maps.Marker({
+    position: new google.maps.LatLng(x, y),
+    map: map
+  });
 }
