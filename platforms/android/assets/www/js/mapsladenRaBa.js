@@ -16,28 +16,20 @@ function getCoords() {
     var myData = doc.data();
     var x = myData.koordinaten.Latitude;
     var y = myData.koordinaten.Longitude;
-    //alert(x);
-    //alert(y);
-    var coords = new google.maps.LatLng(x, y);
-    initAutocomplete(x, y);
+    alert(x);
+    return new google.maps.LatLng(x, y);
   })
 }
 
-function initAutocomplete(x, y) {
-
+function initMap(x, y) {
+  alert("Google Maps");
   var coords = getCoords();
 
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 10,
-    mapTypeId: 'roadmap',
-    streetViewControl: false,
-    fullscreenControl: false,
-    mapTypeControl: false,
-    center: new google.maps.LatLng(x, y)
+    center: coords,
+    mapTypeId: 'roadmap'
   });
 
-  marker = new google.maps.Marker({
-    position: new google.maps.LatLng(x, y),
-    map: map
-  });
+  marker = new google.maps.Marker({map: map, draggable: false, position: coords});
 }
