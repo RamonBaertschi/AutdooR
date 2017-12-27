@@ -20,7 +20,6 @@
   })
 
 
-
   function initAutocomplete() {
     var myLatLng = {lat: 45.363, lng: 9.044};
 
