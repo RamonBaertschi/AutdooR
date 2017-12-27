@@ -29,6 +29,8 @@ var app = {
   onDeviceReady: function() {
     this.receivedEvent('deviceready');
 
+  
+
     //Kamera
     document.getElementById("kamera").addEventListener("click", cameraTakePicture);
 
@@ -53,6 +55,7 @@ var app = {
 
       /* Neue Seite laden
       window.location.href = "teilnehmer03.html";*/
+
     }
   },
 
@@ -69,5 +72,8 @@ var app = {
   }
 
 };
-
+  /*Toggle Button zum Weitermachen*/
+  function show(){
+    document.getElementById('div1').style.display = 'inline';
+  }
 app.initialize();
