@@ -25,11 +25,7 @@
           <a href="teilnehmer03.html">
             <button id="startpunktLaden">Spiel starten</button>
           </a>
-          <div id="testLaden">
-            <p>Koordinaten laden:</p>
-            <p id="koordinat1"></p>
-            <p id="koordinat2"></p>
-          </div>
+          <!-- <div id="testLaden"> <p>Koordinaten laden:</p> <p id="koordinat1"></p> <p id="koordinat2"></p> </div> -->
         </div>
       </div>
     </div>
@@ -38,8 +34,8 @@
 
     <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase-firestore.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqu18ILDU1yshbjO3yKQqGlhMjaqcwf94&callback=initMap" async="async" defer="defer"></script>
-    <script type="text/javascript" src="js/mapsladenRaBa.js"></script>
+    <script type="text/javascript" src="js/mapsladen.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqu18ILDU1yshbjO3yKQqGlhMjaqcwf94&callback=getCoords" async="async" defer="defer"></script>
     <!-- phantom library, needed for Cordova api calls, added during build -->
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
