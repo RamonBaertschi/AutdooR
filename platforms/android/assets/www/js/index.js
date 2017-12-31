@@ -81,7 +81,7 @@ function pruefen() {
   var empt = document.getElementById('koordinaten1').innerHTML;
   if (empt == null || empt == "")
   {
-    alert("Please input a Value");
+    alert("Bitte einen Startpunkt setzen");
     return false;
   }
   else 
