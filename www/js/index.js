@@ -74,4 +74,20 @@ var app = {
 function show() {
   document.getElementById('div1').style.display = 'inline';
 }
+
+/*Prüfen ob Startpunkt gesetzt*/
+function pruefen() {
+
+  var empt = document.getElementById('koordinaten1').innerHTML;
+  if (empt == null || empt == "")
+  {
+  alert("Please input a Value");
+  return false;
+  }
+  else 
+  {
+  return true; 
+  }
+  }
+
 app.initialize();
