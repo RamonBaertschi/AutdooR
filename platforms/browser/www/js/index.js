@@ -77,17 +77,16 @@ function show() {
 
 /*Prüfen ob Startpunkt gesetzt*/
 function pruefen() {
-
+  event.preventDefault();
   var empt = document.getElementById('koordinaten1').innerHTML;
   if (empt == null || empt == "")
   {
-  alert("Please input a Value");
-  return false;
+    alert("Please input a Value");
+    return false;
   }
   else 
   {
-  return true; 
+    return true; 
   }
-  }
-
+}
 app.initialize();
