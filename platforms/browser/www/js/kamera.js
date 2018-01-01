@@ -51,8 +51,8 @@ var app = {
         alert('Fehlgeschlagen weil: ' + message);
       }
 
-      /* Neue Seite laden
-      window.location.href = "teilnehmer03.html";*/
+      /* Weiterleitung nach erfolgreichem Foto */
+      window.location.href = "admin05.html";
 
     }
   },
