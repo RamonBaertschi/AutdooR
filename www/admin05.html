@@ -20,24 +20,19 @@
       <div class="row">
         <div class="col-sm">
           <h2>Spieleinladung versenden</h2>
-
           <p>Kopiere die Spiel-Nummer und sende sie den gewünschten Teilnehmer</p>
 
           <input type="text" placeholder="Spiel-Nummer" id="spielNo">
           <button onclick="copySpiel()">Kopieren</button>
 
-          <script>
-            function copySpiel() {
-              var copyText = document.getElementById("spielNo");
-              copyText.select();
-              document.execCommand("Copy");
-              alert("Herzlichen Glückwunsch du hast es geschafft. Spiel-Nummer kopiert: " + copyText.value);
-            }
-          </script>
-
         </div>
       </div>
     </div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase-firestore.js"></script>
+    <script type="text/javascript" src="js/spielidladen.js"></script>
+    <script type="text/javascript" src="js/copyid.js"></script>
 
     <!-- phantom library, needed for Cordova api calls, added during build -->
     <script type="text/javascript" src="cordova.js"></script>

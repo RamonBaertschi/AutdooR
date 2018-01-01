@@ -3,7 +3,7 @@ function show() {
   document.getElementById('div1').style.display = 'inline';
 }
 
-/* Prüfen ob Startpunkt gesetzt
+/* Prüfen ob Startpunkt gesetzt */
 function pruefen(e) {
   e.preventDefault();
   var empt = document.getElementById('koordinaten1').innerHTML;
@@ -14,4 +14,3 @@ function pruefen(e) {
     return true;
   }
 }
-*/

@@ -1,3 +1,6 @@
+var spielId = spielIdErstellen();
+// alert(spielId);
+
 // Initialize Firebase
 var config = {
   apiKey: "AIzaSyARMSjdUYP-5vUVgtb0_rXqtq3kv772ygA",
@@ -81,7 +84,8 @@ function initAutocomplete() {
           koordinaten: {
             Latitude: place.geometry.location.lat(),
             Longitude: place.geometry.location.lng(),
-            Datum: new Date()
+            Datum: new Date(),
+            id: spielId
           }
         });
       });
