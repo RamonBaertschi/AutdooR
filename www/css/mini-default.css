@@ -27,7 +27,7 @@ html {
 html {
   margin: 0;
   color: #212121;
-  background: linear-gradient(rgba(231, 122, 17, 0.81), rgba(231, 168, 17, 2)), url("../img/bg.jpg");
+  background: url("../img/bg.jpeg");
   background-size: cover;
   height: 100%;
   min-height: 100%;
