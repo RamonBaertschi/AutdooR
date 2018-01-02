@@ -4,3 +4,8 @@ function copySpiel() {
   document.execCommand("Copy");
   alert("Herzlichen Glückwunsch du hast es geschafft. Spiel-Nummer kopiert: " + copyText.value);
 }
+
+function exitFromApp()
+{
+     navigator.app.exitApp();
+}

@@ -11,19 +11,17 @@
   </head>
 
   <body>
-    <header>
-      <a href="admin03.html" role="button">Zurück</a>
-    </header>
+   
 
     <div class="container">
       <div class="row">
         <div class="col-sm">
-          <h2>Text Hinweis erfassen</h2>
+         <h4>Erasse einen Text Hinweis, der die Spieler zum nächsten Ziel führt.</h4>
           <form action="admin05.html" method="post">
-            <label>Erfasse einen Text</label>
-            <textarea name="texterfassen" rows="4" cols="40" placeholder="Text" required="required"></textarea>
+            <label id="label01">Erfasse einen Text</label>
+            <textarea id="text01" name="texterfassen" rows="6" cols="40" placeholder="Text" required="required"></textarea>
             <a href="admin03.html">
-              <button>Speichern</button>
+              <button id="speichern" class="primary">Speichern</button>
             </a>
           </form>
         </div>

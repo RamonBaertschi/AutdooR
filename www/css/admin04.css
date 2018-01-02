@@ -137,72 +137,6 @@ color: black;
 }
 
 
-#testLaden {
-  margin-top: 300px;
-}
-
-#startpunktLaden {
-  margin-top: 250px;
-}
-/*Toggle Button*/
-.hide {
-  display: none;
-}
-
-/*Bild: Text, Video, Photo*/
-#overview{
-  height: 130px;
-}
-/*Button Style*/
-#buttonStart{
-background-color: #EAEAEA;
-width: 240px;
-height: 60px;
-text-align: center;
-border-radius: 2.5px;
-font-weight: bold;
-font-size: 1.5rem;
-color: black;
-display: block;
-margin: auto;
-margin-bottom: 30px;
-text-decoration: none;
-
-}
-/*Modal Style*/
-#labelStart{
-  text-align: center;
-  border-radius: 2.5px;
-  font-weight: normal;
-  font-size: 1.2rem;
-  }
-
-h2 {
-  font-size: 2.6875rem;
-  margin-top: 30px;
-  
-}
-h6{
-  font-weight: normal;
-  font-size: 1.4rem;
-  margin-bottom: 60px;
-
-}
-.labelIcon{
-  display: inline block;
-  background: url("icon-iphone.png");
-}
-
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #000;
-  color: white;
-  text-align: center;
-}
-
 h4{
   font-weight: normal;
   font-size: 1.4rem;
@@ -210,18 +144,38 @@ h4{
   margin-top: 30px;
 }
 
-#weiter {
+#speichern {
   background-color: #EAEAEA;
   text-align: center;
-border-radius: 2.5px;
-font-weight: bold;
-font-size: 1.0rem;
-width: 140px;
-color: black;
+  border-radius: 2.5px;
+  font-weight: bold;
+  font-size: 1.0rem;
+  display: block;
+  margin: auto;
+  width: 80%;
+  color: black;
 
 }
+form {
+  height: 350px;
+  border-style: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 2.5px;
+}
 
-p {
-  font-size: 1rem;
-  line-height: 1rem;
+#label01 {
+  font-size: 1.1rem;
+  color: #EAEAEA;
+  display: block;
+  margin: 20px auto 10px;
+  width: 85%;
+}
+
+#text01 {
+  display: block;
+  margin: auto;
+  width: 80%;
+  margin-bottom: 80px;
+  border-radius: 2.5px;
+  border-style: none;
 }

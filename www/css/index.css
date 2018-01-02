@@ -85,7 +85,6 @@ h1 {
 }
 
 .event.listening {
-  background-color: #333333;
   display: block;
 }
 
@@ -123,36 +122,7 @@ h1 {
   animation: fade 1ms infinite;
   -webkit-animation: fade 1ms infinite;
 }
-/*Button unter Google Maps Karte*/
-#startpunktSetzen {
-  background-color: #EAEAEA;
-  text-align: center;
-  margin-top: 360px;
-  margin-bottom: 20px;
-border-radius: 2.5px;
-font-weight: bold;
-font-size: 1.0rem;
-width: 140px;
-color: black;
-}
 
-
-#testLaden {
-  margin-top: 300px;
-}
-
-#startpunktLaden {
-  margin-top: 250px;
-}
-/*Toggle Button*/
-.hide {
-  display: none;
-}
-
-/*Bild: Text, Video, Photo*/
-#overview{
-  height: 130px;
-}
 /*Button Style*/
 #buttonStart{
 background-color: #EAEAEA;
@@ -177,21 +147,16 @@ text-decoration: none;
   font-size: 1.2rem;
   }
 
-h2 {
-  font-size: 2.6875rem;
-  margin-top: 30px;
-  
-}
-h6{
-  font-weight: normal;
-  font-size: 1.4rem;
-  margin-bottom: 60px;
-
-}
-.labelIcon{
-  display: inline block;
-  background: url("icon-iphone.png");
-}
+  h2 {
+    font-size: 2.6875rem;
+    margin-top: 30px;
+    
+  }
+  h6{
+    font-weight: normal;
+    font-size: 1.4rem;
+    margin-bottom: 60px; 
+  }
 
 footer {
   position: fixed;
@@ -201,27 +166,4 @@ footer {
   background-color: #000;
   color: white;
   text-align: center;
-}
-
-h4{
-  font-weight: normal;
-  font-size: 1.4rem;
-  margin-bottom: 30px;
-  margin-top: 30px;
-}
-
-#weiter {
-  background-color: #EAEAEA;
-  text-align: center;
-border-radius: 2.5px;
-font-weight: bold;
-font-size: 1.0rem;
-width: 140px;
-color: black;
-
-}
-
-p {
-  font-size: 1rem;
-  line-height: 1rem;
 }

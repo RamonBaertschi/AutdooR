@@ -1,41 +1,39 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <!-- <meta name="apple-mobile-web-app-capable" content="yes"> <meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <!-- <meta name="apple-mobile-web-app-capable" content="yes"> <meta name="apple-mobile-web-app-status-bar-style" content="black">-->
 
-    <link rel="stylesheet" type="text/css" href="css/mini-default.css">
-    <link rel="stylesheet" type="text/css" href="css/admin05.css">
-    <title>admin05</title>
-  </head>
+  <link rel="stylesheet" type="text/css" href="css/mini-default.css">
+  <link rel="stylesheet" type="text/css" href="css/admin05.css">
+  <title>admin05</title>
+</head>
 
-  <body>
-    <header>
-      <a href="admin03.html" role="button">Zurück</a>
-    </header>
+<body>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-sm">
-          <h2>Spieleinladung versenden</h2>
-          <p>Kopiere die Spiel-Nummer und sende sie den gewünschten Teilnehmer</p>
-
-          <input type="text" placeholder="Spiel-Nummer" id="spielNo">
-          <button onclick="copySpiel()">Kopieren</button>
-
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <h4>Kopiere die Spiel-Nummer und sende sie den gewünschten Teilnehmer.</h4>
+        <form id="form01">
+          <label id="label01">Test</label>
+          <input type="text" placeholder="Spiel-Nummer" id="spielNo" readonly>
+          <button id="copy" class="primary" onclick="copySpiel()">Kopieren</button>
+        </form>
+        <button id="exit" class="primary" onclick="exitFromApp()">App beenden</button>
       </div>
     </div>
+  </div>
 
-    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase-firestore.js"></script>
-    <script type="text/javascript" src="js/spielidladen.js"></script>
-    <script type="text/javascript" src="js/copyid.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js "></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase-firestore.js "></script>
+  <script type="text/javascript " src="js/spielidladen.js "></script>
+  <script type="text/javascript " src="js/copyid.js "></script>
 
-    <!-- phantom library, needed for Cordova api calls, added during build -->
-    <script type="text/javascript" src="cordova.js"></script>
+  <!-- phantom library, needed for Cordova api calls, added during build -->
+  <script type="text/javascript " src="cordova.js "></script>
 
-  </body>
+</body>
 </html>
