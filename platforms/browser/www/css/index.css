@@ -141,3 +141,15 @@ h1 {
 #overview{
   height: 130px;
 }
+/*Button Style*/
+#buttonStart{
+background-color: #EAEAEA;
+width: 220px;
+height: 40px;
+text-align: center;
+border-radius: 15px 50px;
+font-weight: bold;
+}
+h2 {
+  font-size: 2.6875rem;
+}
