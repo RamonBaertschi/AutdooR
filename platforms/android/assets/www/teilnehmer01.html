@@ -12,24 +12,17 @@
   </head>
 
   <body>
-    <header>
-      <a href="index.html" role="button">Zurück</a>
-    </header>
 
     <div class="container">
       <div class="row">
         <div class="col-sm">
-          <h2>Spiel starten</h2>
+          <h4>Kopiere die Spiel-Nummer die du in der Einladung erhlaten hast, in das untenstehende Feld.</h4>
           <form action="teilnehmer02.html" method="post">
-            <div>
-              <label>Spiel-Nummer eingeben:</label>
-              <input type="text" name="spielname" placeholder="Spiel-Nummer" required="required">
-            </div>
-            <div>
-              <a href="teilnehmer02.html">
-                <button id="teilnehmenx">Teilnehmen</button>
-              </a>
-            </div>
+            <label id="label01">Spiel-Nummer eingeben:</label>
+            <input id="input01" type="text" name="spielname" placeholder="Spiel-Nummer" required="required">
+            <a href="teilnehmer02.html">
+              <button class="primary" id="teilnehmenx">Teilnehmen</button>
+            </a>
           </form>
         </div>
       </div>

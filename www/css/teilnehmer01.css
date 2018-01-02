@@ -16,10 +16,13 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-*, *:before, *:after{
+*,
+*:after,
+*:before {
   box-sizing: border-box;
 }
- * {
+
+* {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
@@ -123,105 +126,65 @@ h1 {
   animation: fade 1ms infinite;
   -webkit-animation: fade 1ms infinite;
 }
-/*Button unter Google Maps Karte*/
-#startpunktSetzen {
+/*
+* Customizing
+*/
+/*Form*/
+form {
+  height: 230px;
+  border-style: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 2.5px;
+}
+
+#label01 {
+  font-size: 1.1rem;
+  color: #EAEAEA;
+  display: block;
+  margin: 20px auto 10px;
+  width: 85%;
+}
+
+#input01 {
+  display: block;
+  margin: auto;
+  width: 80%;
+  margin-bottom: 40px;
+  border-radius: 2.5px;
+  border-style: none;
+}
+/* Button Teilnehmen */
+#teilnehmenx {
   background-color: #EAEAEA;
   text-align: center;
-  margin-top: 360px;
-  margin-bottom: 20px;
-border-radius: 2.5px;
-font-weight: bold;
-font-size: 1.0rem;
-width: 140px;
-color: black;
-}
-
-
-#testLaden {
-  margin-top: 300px;
-}
-
-#startpunktLaden {
-  margin-top: 250px;
-}
-/*Toggle Button*/
-.hide {
-  display: none;
-}
-
-/*Bild: Text, Video, Photo*/
-#overview{
-  height: 130px;
-}
-/*Button Style*/
-#buttonStart{
-background-color: #EAEAEA;
-width: 240px;
-height: 60px;
-text-align: center;
-border-radius: 2.5px;
-font-weight: bold;
-font-size: 1.5rem;
-color: black;
-display: block;
-margin: auto;
-margin-bottom: 30px;
-text-decoration: none;
-
-}
-/*Modal Style*/
-#labelStart{
-  text-align: center;
   border-radius: 2.5px;
-  font-weight: normal;
-  font-size: 1.2rem;
-  }
+  font-weight: bold;
+  font-size: 1.0rem;
+  display: block;
+  margin: auto;
+  width: 80%;
+  color: black;
+}
 
 h2 {
   font-size: 2.6875rem;
   margin-top: 30px;
-  
-}
-h6{
-  font-weight: normal;
-  font-size: 1.4rem;
-  margin-bottom: 60px;
-
-}
-.labelIcon{
-  display: inline block;
-  background: url("icon-iphone.png");
 }
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #000;
-  color: white;
-  text-align: center;
-}
-
-h4{
+h4 {
   font-weight: normal;
   font-size: 1.4rem;
   margin-bottom: 30px;
   margin-top: 30px;
 }
 
-#weiter {
-  background-color: #EAEAEA;
-  text-align: center;
-border-radius: 2.5px;
-font-weight: bold;
-font-size: 1.0rem;
-width: 140px;
-color: black;
-
+h6 {
+  font-weight: normal;
+  font-size: 1.4rem;
+  margin-bottom: 60px;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1rem;
 }
