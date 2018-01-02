@@ -126,7 +126,6 @@ h1 {
   -webkit-animation: fade 1ms infinite;
 }
 /*Button Style*/
-<<<<<<< HEAD
 #buttonStart{
 background-color: #EAEAEA;
 width: 240px;
@@ -140,21 +139,7 @@ display: block;
 margin: auto;
 margin-bottom: 30px;
 text-decoration: none;
-=======
-#buttonStart {
-  background-color: #CCCCCC;
-  width: 240px;
-  height: 60px;
-  text-align: center;
-  border-radius: 2.5px;
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: black;
-  display: block;
-  margin: auto auto 30px;
-  text-decoration: none;
 }
->>>>>>> 8ddaad038a44b6c3cebeeda40a6e6f9cd4f936bc
 
 #buttonTeiln {
   background-color: #CCCCCC;
@@ -177,7 +162,6 @@ text-decoration: none;
   font-size: 1.2rem;
 }
 
-<<<<<<< HEAD
   h2 {
     font-size: 2.6875rem;
     margin-top: 30px;
@@ -190,18 +174,6 @@ text-decoration: none;
     margin-bottom: 60px;
     text-align: center; 
   }
-=======
-h2 {
-  font-size: 2.6875rem;
-  margin-top: 30px;
-}
-
-h6 {
-  font-weight: normal;
-  font-size: 1.4rem;
-  margin-bottom: 60px;
-}
->>>>>>> 8ddaad038a44b6c3cebeeda40a6e6f9cd4f936bc
 
 footer {
   position: fixed;
