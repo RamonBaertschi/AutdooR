@@ -88,7 +88,6 @@ h1 {
 }
 
 .event.listening {
-  background-color: #333333;
   display: block;
 }
 
@@ -129,47 +128,17 @@ h1 {
 /*
 * Customizing
 /*
-/*Button unter Google Maps Karte*/
-#startpunktSetzen {
+/*Button Scan Starten*/
+#launch-demo {
   background-color: #EAEAEA;
   text-align: center;
-  margin-top: 360px;
-  margin-bottom: 20px;
+  display: block;
+  margin: 150px auto 20px;
   border-radius: 2.5px;
   font-weight: bold;
   font-size: 1.0rem;
   width: 140px;
   color: black;
-}
-
-#testLaden {
-  margin-top: 300px;
-}
-
-#startpunktLaden {
-  margin-top: 250px;
-}
-/*Toggle Button*/
-.hide {
-  display: none;
-}
-/*Bild: Text, Video, Photo*/
-#overview {
-  height: 130px;
-}
-/*Button Style*/
-#buttonStart {
-  background-color: #EAEAEA;
-  width: 240px;
-  height: 60px;
-  text-align: center;
-  border-radius: 2.5px;
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: black;
-  display: block;
-  margin: auto auto 30px;
-  text-decoration: none;
 }
 
 h2 {
