@@ -16,7 +16,10 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-* {
+*, *:before, *:after{
+  box-sizing: border-box;
+}
+ * {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
@@ -117,13 +120,22 @@ h1 {
 }
 
 .blink {
-  animation: fade 3000ms infinite;
-  -webkit-animation: fade 3000ms infinite;
+  animation: fade 1ms infinite;
+  -webkit-animation: fade 1ms infinite;
 }
 /*Button unter Google Maps Karte*/
 #startpunktSetzen {
-  margin-top: 250px;
+  background-color: #EAEAEA;
+  text-align: center;
+  margin-top: 360px;
+  margin-bottom: 20px;
+border-radius: 2.5px;
+font-weight: bold;
+font-size: 1.0rem;
+width: 140px;
+color: black;
 }
+
 
 #testLaden {
   margin-top: 300px;
@@ -144,12 +156,72 @@ h1 {
 /*Button Style*/
 #buttonStart{
 background-color: #EAEAEA;
-width: 220px;
-height: 40px;
+width: 240px;
+height: 60px;
 text-align: center;
-border-radius: 15px 50px;
+border-radius: 2.5px;
 font-weight: bold;
+font-size: 1.5rem;
+color: black;
+display: block;
+margin: auto;
+margin-bottom: 30px;
+text-decoration: none;
+
 }
+/*Modal Style*/
+#labelStart{
+  text-align: center;
+  border-radius: 2.5px;
+  font-weight: normal;
+  font-size: 1.2rem;
+  }
+
 h2 {
   font-size: 2.6875rem;
+  margin-top: 30px;
+  
+}
+h6{
+  font-weight: normal;
+  font-size: 1.4rem;
+  margin-bottom: 60px;
+
+}
+.labelIcon{
+  display: inline block;
+  background: url("icon-iphone.png");
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  color: white;
+  text-align: center;
+}
+
+h4{
+  font-weight: normal;
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+#weiter {
+  background-color: #EAEAEA;
+  text-align: center;
+border-radius: 2.5px;
+font-weight: bold;
+font-size: 1.0rem;
+width: 140px;
+color: black;
+
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1rem;
 }

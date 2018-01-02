@@ -7,30 +7,28 @@
 
     <link rel="stylesheet" type="text/css" href="css/mini-default.css">
     <link rel="stylesheet" type="text/css" href="css/maps.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/admin01.css">
     <title>admin01</title>
   </head>
 
   <body>
-    <header>
-      <a href="index.html" role="button">Zurück</a>
-    </header>
-
+      <div id="map"></div>
     <div class="container">
       <div class="row">
         <div class="col-sm">
-          <h2>Startpunkt</h2>
+          
+          <h4>Definiere einen Startpunkt mittels Suchfeld in der Karte.</h4>
           <div>
             <input id="pac-input" class="controls" type="text" placeholder="Hallo AutdooR Freund: Such etwas">
           </div>
-          <div id="map"></div>
+         
 
           <!-- <div> <button id="startpunktSetzen">Startpunkt setzen</button> </div>-->
 
-          <button id="startpunktSetzen" value="Startpunkt setzen..." onclick="show();">Startpunkt setzen</button>
-          <div id="div1" class="hide">
-            <a id="weiter" role="button" name="weiter" onclick="pruefen();">Weiter</a>
-          </div>
+          <button id="startpunktSetzen" class="primary" value="Startpunkt setzen..." onclick="show();">Startpunkt setzen</button>
+          <span id="div1" class="hide">
+            <a id="weiter" role="button" class="primary" name="weiter" onclick="pruefen();">Weiter</a>
+          </span>
 
           <div>
             <p>Koordinaten anzeigen:</p>

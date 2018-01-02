@@ -12,16 +12,16 @@
   </head>
 
   <body>
-    <header></header>
+    
 
     <div class="container">
       <div class="row">
         <div class="col-sm">
           <h2>AutdooR</h2>
-          <p>Experience the nature with virtual goals</p>
+          <h6>Experience the nature with virtual goals</h6>
           <div>
             <a href="admin01.html">
-              <button id="buttonStart">Spiel erstellen</button>
+              <button id="buttonStart" class="primary">Spiel erstellen</button>
             </a>
           </div>
 
@@ -30,9 +30,8 @@
               <button id="buttonStart">Spiel teilnehmen</button>
             </a>
           </div>
-          <div>
-            <label class="button" for="modal-check" id="buttonStart">Anleitung</label>
-          </div>
+          
+        
           <br/>
           <br/>
           <input id="modal-check" type="checkbox"/>
@@ -63,7 +62,24 @@
         </div>
       </div>
     </div>
+    <footer>
+        <p> <label for="modal-check" id="labelStart" class="labelIcon">Anleitung</label>
+          
 
+
+          <br/>
+          <br/>
+          <input id="modal-check" type="checkbox"/>
+          <div class="modal" style="text-align:initial">
+            <div class="card">
+              <label for="modal-check" class="close"></label>
+              <h3 class="section double-padded">Anleitung</h3>
+              <div class="section double-padded">
+                
+              </div>
+            </div>
+          </div></p>
+      </footer>
     <script type="text/javascript" src="cordova.js"></script>
   </body>
 </html>

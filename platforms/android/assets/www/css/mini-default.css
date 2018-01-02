@@ -219,7 +219,7 @@ sup {
 
 a {
   color: #0277bd;
-  text-decoration: underline;
+  text-decoration: none;
   opacity: 1;
   transition: opacity 0.3s;
 }
@@ -1451,7 +1451,7 @@ nav .sublink-2:before {
 
 footer {
   display: block;
-  background: #192024;
+  background: #000;
   color: #f5f5f5;
   margin: 1rem 0 0;
   padding: 1.5rem 0.5rem 0.75rem;

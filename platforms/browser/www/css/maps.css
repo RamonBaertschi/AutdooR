@@ -1,10 +1,10 @@
 /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
 #map {
-  height: 38%;
-  width: 92%;
-  border: solid 1px black;
+  height: 50%;
+  width: 100%;
   position: absolute;
+  margin-top: 100px;
 }
 
 .controls {
@@ -20,10 +20,10 @@
 
 #pac-input {
   background-color: #fff;
-  font-family: Roboto;
+  font-family: Lato;
   font-size: 15px;
   font-weight: 300;
-  margin-left: 8px;
+  margin-left: 42px;
   padding: 0 11px 0 13px;
   text-overflow: ellipsis;
   width: 275px;
@@ -34,7 +34,7 @@
 }
 
 .pac-container {
-  font-family: Roboto;
+  font-family: Lato;
 }
 
 #type-selector {
@@ -44,7 +44,7 @@
 }
 
 #type-selector label {
-  font-family: Roboto;
+  font-family: Lato;
   font-size: 13px;
   font-weight: 300;
 }
