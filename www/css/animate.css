@@ -26,24 +26,24 @@
   animation-duration: 0.75s;
 }
 @keyframes bounce {
+  0%,
   20%,
   53%,
   80%,
-  from,
   to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    transform: translate3d(0,0,0);
+    animation-timing-function: cubic-bezier(.215,.61,.355,1);
+    transform: translateZ(0);
   }
 
   40%,
   43% {
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    transform: translate3d(0, -30px, 0);
+    animation-timing-function: cubic-bezier(.755,.05,.855,.06);
+    transform: translate3d(0,-30px,0);
   }
 
   70% {
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    transform: translate3d(0, -15px, 0);
+    animation-timing-function: cubic-bezier(.755,.05,.855,.06);
+    transform: translate3d(0,-15px,0);
   }
 
   90% {
@@ -56,8 +56,8 @@
   transform-origin: center bottom;
 }
 @keyframes flash {
+  0%,
   50%,
-  from,
   to {
     opacity: 1;
   }
@@ -71,18 +71,17 @@
 .flash {
   animation-name: flash;
 }
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 @keyframes pulse {
-  from {
-    transform: scale3d(1, 1, 1);
+  0% {
+    transform: scaleX(1);
   }
 
   50% {
-    transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05,1.05,1.05);
   }
 
   to {
-    transform: scale3d(1, 1, 1);
+    transform: scaleX(1);
   }
 }
 
@@ -90,32 +89,32 @@
   animation-name: pulse;
 }
 @keyframes rubberBand {
-  from {
-    transform: scale3d(1, 1, 1);
+  0% {
+    transform: scaleX(1);
   }
 
   30% {
-    transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25,.75,1);
   }
 
   40% {
-    transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(.75,1.25,1);
   }
 
   50% {
-    transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15,.85,1);
   }
 
   65% {
-    transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95,1.05,1);
   }
 
   75% {
-    transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05,.95,1);
   }
 
   to {
-    transform: scale3d(1, 1, 1);
+    transform: scaleX(1);
   }
 }
 
@@ -123,9 +122,9 @@
   animation-name: rubberBand;
 }
 @keyframes shake {
-  from,
+  0%,
   to {
-    transform: translate3d(0, 0, 0);
+    transform: translateZ(0);
   }
 
   10%,
@@ -133,14 +132,14 @@
   50%,
   70%,
   90% {
-    transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px,0,0);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px,0,0);
   }
 }
 
@@ -179,23 +178,23 @@
 }
 @keyframes swing {
   20% {
-    transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate(15deg);
   }
 
   40% {
-    transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate(-10deg);
   }
 
   60% {
-    transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate(5deg);
   }
 
   80% {
-    transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate(-5deg);
   }
 
   to {
-    transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate(0deg);
   }
 }
 
@@ -204,60 +203,59 @@
   animation-name: swing;
 }
 @keyframes tada {
-  from {
-    transform: scale3d(1, 1, 1);
+  0% {
+    transform: scaleX(1);
   }
 
   10%,
   20% {
-    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(.9,.9,.9) rotate(-3deg);
   }
 
   30%,
   50%,
   70%,
   90% {
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1,1.1,1.1) rotate(3deg);
   }
 
   40%,
   60%,
   80% {
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1,1.1,1.1) rotate(-3deg);
   }
 
   to {
-    transform: scale3d(1, 1, 1);
+    transform: scaleX(1);
   }
 }
 
 .tada {
   animation-name: tada;
 }
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 @keyframes wobble {
-  from {
+  0% {
     transform: none;
   }
 
   15% {
-    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    transform: translate3d(-25%,0,0) rotate(-5deg);
   }
 
   30% {
-    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    transform: translate3d(20%,0,0) rotate(3deg);
   }
 
   45% {
-    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    transform: translate3d(-15%,0,0) rotate(-3deg);
   }
 
   60% {
-    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    transform: translate3d(10%,0,0) rotate(2deg);
   }
 
   75% {
-    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    transform: translate3d(-5%,0,0) rotate(-1deg);
   }
 
   to {
@@ -269,8 +267,8 @@
   animation-name: wobble;
 }
 @keyframes jello {
+  0%,
   11.1%,
-  from,
   to {
     transform: none;
   }
@@ -292,15 +290,15 @@
   }
 
   66.6% {
-    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+    transform: skewX(-.78125deg) skewY(-.78125deg);
   }
 
   77.7% {
-    transform: skewX(0.390625deg) skewY(0.390625deg);
+    transform: skewX(.390625deg) skewY(.390625deg);
   }
 
   88.8% {
-    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+    transform: skewX(-.1953125deg) skewY(-.1953125deg);
   }
 }
 
@@ -309,40 +307,40 @@
   transform-origin: center;
 }
 @keyframes bounceIn {
+  0%,
   20%,
   40%,
   60%,
   80%,
-  from,
   to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(.215,.61,.355,1);
   }
 
   0% {
     opacity: 0;
-    transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3,.3,.3);
   }
 
   20% {
-    transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1,1.1,1.1);
   }
 
   40% {
-    transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9,.9,.9);
   }
 
   60% {
     opacity: 1;
-    transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03,1.03,1.03);
   }
 
   80% {
-    transform: scale3d(.97, .97, .97);
+    transform: scale3d(.97,.97,.97);
   }
 
   to {
     opacity: 1;
-    transform: scale3d(1, 1, 1);
+    transform: scaleX(1);
   }
 }
 
@@ -350,30 +348,30 @@
   animation-name: bounceIn;
 }
 @keyframes bounceInDown {
+  0%,
   60%,
   75%,
   90%,
-  from,
   to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(.215,.61,.355,1);
   }
 
   0% {
     opacity: 0;
-    transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0,-3000px,0);
   }
 
   60% {
     opacity: 1;
-    transform: translate3d(0, 25px, 0);
+    transform: translate3d(0,25px,0);
   }
 
   75% {
-    transform: translate3d(0, -10px, 0);
+    transform: translate3d(0,-10px,0);
   }
 
   90% {
-    transform: translate3d(0, 5px, 0);
+    transform: translate3d(0,5px,0);
   }
 
   to {
@@ -385,30 +383,30 @@
   animation-name: bounceInDown;
 }
 @keyframes bounceInLeft {
+  0%,
   60%,
   75%,
   90%,
-  from,
   to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(.215,.61,.355,1);
   }
 
   0% {
     opacity: 0;
-    transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px,0,0);
   }
 
   60% {
     opacity: 1;
-    transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px,0,0);
   }
 
   75% {
-    transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px,0,0);
   }
 
   90% {
-    transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px,0,0);
   }
 
   to {
@@ -420,30 +418,30 @@
   animation-name: bounceInLeft;
 }
 @keyframes bounceInRight {
+  0%,
   60%,
   75%,
   90%,
-  from,
   to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(.215,.61,.355,1);
   }
 
-  from {
+  0% {
     opacity: 0;
-    transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px,0,0);
   }
 
   60% {
     opacity: 1;
-    transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px,0,0);
   }
 
   75% {
-    transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px,0,0);
   }
 
   90% {
-    transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px,0,0);
   }
 
   to {
@@ -455,34 +453,34 @@
   animation-name: bounceInRight;
 }
 @keyframes bounceInUp {
+  0%,
   60%,
   75%,
   90%,
-  from,
   to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(.215,.61,.355,1);
   }
 
-  from {
+  0% {
     opacity: 0;
-    transform: translate3d(0, 3000px, 0);
+    transform: translate3d(0,3000px,0);
   }
 
   60% {
     opacity: 1;
-    transform: translate3d(0, -20px, 0);
+    transform: translate3d(0,-20px,0);
   }
 
   75% {
-    transform: translate3d(0, 10px, 0);
+    transform: translate3d(0,10px,0);
   }
 
   90% {
-    transform: translate3d(0, -5px, 0);
+    transform: translate3d(0,-5px,0);
   }
 
   to {
-    transform: translate3d(0, 0, 0);
+    transform: translateZ(0);
   }
 }
 
@@ -491,18 +489,18 @@
 }
 @keyframes bounceOut {
   20% {
-    transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9,.9,.9);
   }
 
   50%,
   55% {
     opacity: 1;
-    transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1,1.1,1.1);
   }
 
   to {
     opacity: 0;
-    transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3,.3,.3);
   }
 }
 
@@ -511,18 +509,18 @@
 }
 @keyframes bounceOutDown {
   20% {
-    transform: translate3d(0, 10px, 0);
+    transform: translate3d(0,10px,0);
   }
 
   40%,
   45% {
     opacity: 1;
-    transform: translate3d(0, -20px, 0);
+    transform: translate3d(0,-20px,0);
   }
 
   to {
     opacity: 0;
-    transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0,2000px,0);
   }
 }
 
@@ -532,12 +530,12 @@
 @keyframes bounceOutLeft {
   20% {
     opacity: 1;
-    transform: translate3d(20px, 0, 0);
+    transform: translate3d(20px,0,0);
   }
 
   to {
     opacity: 0;
-    transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px,0,0);
   }
 }
 
@@ -547,12 +545,12 @@
 @keyframes bounceOutRight {
   20% {
     opacity: 1;
-    transform: translate3d(-20px, 0, 0);
+    transform: translate3d(-20px,0,0);
   }
 
   to {
     opacity: 0;
-    transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px,0,0);
   }
 }
 
@@ -561,18 +559,18 @@
 }
 @keyframes bounceOutUp {
   20% {
-    transform: translate3d(0, -10px, 0);
+    transform: translate3d(0,-10px,0);
   }
 
   40%,
   45% {
     opacity: 1;
-    transform: translate3d(0, 20px, 0);
+    transform: translate3d(0,20px,0);
   }
 
   to {
     opacity: 0;
-    transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0,-2000px,0);
   }
 }
 
@@ -580,7 +578,7 @@
   animation-name: bounceOutUp;
 }
 @keyframes fadeIn {
-  from {
+  0% {
     opacity: 0;
   }
 
@@ -593,9 +591,9 @@
   animation-name: fadeIn;
 }
 @keyframes fadeInDown {
-  from {
+  0% {
     opacity: 0;
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(0,-100%,0);
   }
 
   to {
@@ -608,9 +606,9 @@
   animation-name: fadeInDown;
 }
 @keyframes fadeInDownBig {
-  from {
+  0% {
     opacity: 0;
-    transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0,-2000px,0);
   }
 
   to {
@@ -623,9 +621,9 @@
   animation-name: fadeInDownBig;
 }
 @keyframes fadeInLeft {
-  from {
+  0% {
     opacity: 0;
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%,0,0);
   }
 
   to {
@@ -638,9 +636,9 @@
   animation-name: fadeInLeft;
 }
 @keyframes fadeInLeftBig {
-  from {
+  0% {
     opacity: 0;
-    transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px,0,0);
   }
 
   to {
@@ -653,9 +651,9 @@
   animation-name: fadeInLeftBig;
 }
 @keyframes fadeInRight {
-  from {
+  0% {
     opacity: 0;
-    transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%,0,0);
   }
 
   to {
@@ -668,9 +666,9 @@
   animation-name: fadeInRight;
 }
 @keyframes fadeInRightBig {
-  from {
+  0% {
     opacity: 0;
-    transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px,0,0);
   }
 
   to {
@@ -683,9 +681,9 @@
   animation-name: fadeInRightBig;
 }
 @keyframes fadeInUp {
-  from {
+  0% {
     opacity: 0;
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0,100%,0);
   }
 
   to {
@@ -698,9 +696,9 @@
   animation-name: fadeInUp;
 }
 @keyframes fadeInUpBig {
-  from {
+  0% {
     opacity: 0;
-    transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0,2000px,0);
   }
 
   to {
@@ -713,7 +711,7 @@
   animation-name: fadeInUpBig;
 }
 @keyframes fadeOut {
-  from {
+  0% {
     opacity: 1;
   }
 
@@ -726,13 +724,13 @@
   animation-name: fadeOut;
 }
 @keyframes fadeOutDown {
-  from {
+  0% {
     opacity: 1;
   }
 
   to {
     opacity: 0;
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0,100%,0);
   }
 }
 
@@ -740,13 +738,13 @@
   animation-name: fadeOutDown;
 }
 @keyframes fadeOutDownBig {
-  from {
+  0% {
     opacity: 1;
   }
 
   to {
     opacity: 0;
-    transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0,2000px,0);
   }
 }
 
@@ -754,13 +752,13 @@
   animation-name: fadeOutDownBig;
 }
 @keyframes fadeOutLeft {
-  from {
+  0% {
     opacity: 1;
   }
 
   to {
     opacity: 0;
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%,0,0);
   }
 }
 
@@ -768,13 +766,13 @@
   animation-name: fadeOutLeft;
 }
 @keyframes fadeOutLeftBig {
-  from {
+  0% {
     opacity: 1;
   }
 
   to {
     opacity: 0;
-    transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px,0,0);
   }
 }
 
@@ -782,13 +780,13 @@
   animation-name: fadeOutLeftBig;
 }
 @keyframes fadeOutRight {
-  from {
+  0% {
     opacity: 1;
   }
 
   to {
     opacity: 0;
-    transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%,0,0);
   }
 }
 
@@ -796,13 +794,13 @@
   animation-name: fadeOutRight;
 }
 @keyframes fadeOutRightBig {
-  from {
+  0% {
     opacity: 1;
   }
 
   to {
     opacity: 0;
-    transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px,0,0);
   }
 }
 
@@ -810,13 +808,13 @@
   animation-name: fadeOutRightBig;
 }
 @keyframes fadeOutUp {
-  from {
+  0% {
     opacity: 1;
   }
 
   to {
     opacity: 0;
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(0,-100%,0);
   }
 }
 
@@ -824,13 +822,13 @@
   animation-name: fadeOutUp;
 }
 @keyframes fadeOutUpBig {
-  from {
+  0% {
     opacity: 1;
   }
 
   to {
     opacity: 0;
-    transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0,-2000px,0);
   }
 }
 
@@ -838,23 +836,23 @@
   animation-name: fadeOutUpBig;
 }
 @keyframes flip {
-  from {
-    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+  0% {
+    transform: perspective(400px) rotateY(-1turn);
     animation-timing-function: ease-out;
   }
 
   40% {
-    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    transform: perspective(400px) translateZ(150px) rotateY(-190deg);
     animation-timing-function: ease-out;
   }
 
   50% {
-    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    transform: perspective(400px) translateZ(150px) rotateY(-170deg);
     animation-timing-function: ease-in;
   }
 
   80% {
-    transform: perspective(400px) scale3d(.95, .95, .95);
+    transform: perspective(400px) scale3d(.95,.95,.95);
     animation-timing-function: ease-in;
   }
 
@@ -870,24 +868,24 @@
   animation-name: flip;
 }
 @keyframes flipInX {
-  from {
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+  0% {
+    transform: perspective(400px) rotateX(90deg);
     animation-timing-function: ease-in;
     opacity: 0;
   }
 
   40% {
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotateX(-20deg);
     animation-timing-function: ease-in;
   }
 
   60% {
-    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotateX(10deg);
     opacity: 1;
   }
 
   80% {
-    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotateX(-5deg);
   }
 
   to {
@@ -896,29 +894,29 @@
 }
 
 .flipInX {
-  -webkit-backface-visibility: visible !important;
-  backface-visibility: visible !important;
+  -webkit-backface-visibility: visible!important;
+  backface-visibility: visible!important;
   animation-name: flipInX;
 }
 @keyframes flipInY {
-  from {
-    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+  0% {
+    transform: perspective(400px) rotateY(90deg);
     animation-timing-function: ease-in;
     opacity: 0;
   }
 
   40% {
-    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    transform: perspective(400px) rotateY(-20deg);
     animation-timing-function: ease-in;
   }
 
   60% {
-    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    transform: perspective(400px) rotateY(10deg);
     opacity: 1;
   }
 
   80% {
-    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    transform: perspective(400px) rotateY(-5deg);
   }
 
   to {
@@ -927,55 +925,55 @@
 }
 
 .flipInY {
-  -webkit-backface-visibility: visible !important;
-  backface-visibility: visible !important;
+  -webkit-backface-visibility: visible!important;
+  backface-visibility: visible!important;
   animation-name: flipInY;
 }
 @keyframes flipOutX {
-  from {
+  0% {
     transform: perspective(400px);
   }
 
   30% {
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotateX(-20deg);
     opacity: 1;
   }
 
   to {
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotateX(90deg);
     opacity: 0;
   }
 }
 
 .flipOutX {
   animation-name: flipOutX;
-  -webkit-backface-visibility: visible !important;
-  backface-visibility: visible !important;
+  -webkit-backface-visibility: visible!important;
+  backface-visibility: visible!important;
 }
 @keyframes flipOutY {
-  from {
+  0% {
     transform: perspective(400px);
   }
 
   30% {
-    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    transform: perspective(400px) rotateY(-15deg);
     opacity: 1;
   }
 
   to {
-    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(400px) rotateY(90deg);
     opacity: 0;
   }
 }
 
 .flipOutY {
-  -webkit-backface-visibility: visible !important;
-  backface-visibility: visible !important;
+  -webkit-backface-visibility: visible!important;
+  backface-visibility: visible!important;
   animation-name: flipOutY;
 }
 @keyframes lightSpeedIn {
-  from {
-    transform: translate3d(100%, 0, 0) skewX(-30deg);
+  0% {
+    transform: translate3d(100%,0,0) skewX(-30deg);
     opacity: 0;
   }
 
@@ -1000,12 +998,12 @@
   animation-timing-function: ease-out;
 }
 @keyframes lightSpeedOut {
-  from {
+  0% {
     opacity: 1;
   }
 
   to {
-    transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%,0,0) skewX(30deg);
     opacity: 0;
   }
 }
@@ -1015,9 +1013,9 @@
   animation-timing-function: ease-in;
 }
 @keyframes rotateIn {
-  from {
+  0% {
     transform-origin: center;
-    transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate(-200deg);
     opacity: 0;
   }
 
@@ -1032,9 +1030,9 @@
   animation-name: rotateIn;
 }
 @keyframes rotateInDownLeft {
-  from {
+  0% {
     transform-origin: left bottom;
-    transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate(-45deg);
     opacity: 0;
   }
 
@@ -1049,9 +1047,9 @@
   animation-name: rotateInDownLeft;
 }
 @keyframes rotateInDownRight {
-  from {
+  0% {
     transform-origin: right bottom;
-    transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate(45deg);
     opacity: 0;
   }
 
@@ -1066,9 +1064,9 @@
   animation-name: rotateInDownRight;
 }
 @keyframes rotateInUpLeft {
-  from {
+  0% {
     transform-origin: left bottom;
-    transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate(45deg);
     opacity: 0;
   }
 
@@ -1083,9 +1081,9 @@
   animation-name: rotateInUpLeft;
 }
 @keyframes rotateInUpRight {
-  from {
+  0% {
     transform-origin: right bottom;
-    transform: rotate3d(0, 0, 1, -90deg);
+    transform: rotate(-90deg);
     opacity: 0;
   }
 
@@ -1100,14 +1098,14 @@
   animation-name: rotateInUpRight;
 }
 @keyframes rotateOut {
-  from {
+  0% {
     transform-origin: center;
     opacity: 1;
   }
 
   to {
     transform-origin: center;
-    transform: rotate3d(0, 0, 1, 200deg);
+    transform: rotate(200deg);
     opacity: 0;
   }
 }
@@ -1116,14 +1114,14 @@
   animation-name: rotateOut;
 }
 @keyframes rotateOutDownLeft {
-  from {
+  0% {
     transform-origin: left bottom;
     opacity: 1;
   }
 
   to {
     transform-origin: left bottom;
-    transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate(45deg);
     opacity: 0;
   }
 }
@@ -1132,14 +1130,14 @@
   animation-name: rotateOutDownLeft;
 }
 @keyframes rotateOutDownRight {
-  from {
+  0% {
     transform-origin: right bottom;
     opacity: 1;
   }
 
   to {
     transform-origin: right bottom;
-    transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate(-45deg);
     opacity: 0;
   }
 }
@@ -1148,14 +1146,14 @@
   animation-name: rotateOutDownRight;
 }
 @keyframes rotateOutUpLeft {
-  from {
+  0% {
     transform-origin: left bottom;
     opacity: 1;
   }
 
   to {
     transform-origin: left bottom;
-    transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate(-45deg);
     opacity: 0;
   }
 }
@@ -1164,14 +1162,14 @@
   animation-name: rotateOutUpLeft;
 }
 @keyframes rotateOutUpRight {
-  from {
+  0% {
     transform-origin: right bottom;
     opacity: 1;
   }
 
   to {
     transform-origin: right bottom;
-    transform: rotate3d(0, 0, 1, 90deg);
+    transform: rotate(90deg);
     opacity: 0;
   }
 }
@@ -1187,21 +1185,21 @@
 
   20%,
   60% {
-    transform: rotate3d(0, 0, 1, 80deg);
+    transform: rotate(80deg);
     transform-origin: top left;
     animation-timing-function: ease-in-out;
   }
 
   40%,
   80% {
-    transform: rotate3d(0, 0, 1, 60deg);
+    transform: rotate(60deg);
     transform-origin: top left;
     animation-timing-function: ease-in-out;
     opacity: 1;
   }
 
   to {
-    transform: translate3d(0, 700px, 0);
+    transform: translate3d(0,700px,0);
     opacity: 0;
   }
 }
@@ -1210,9 +1208,9 @@
   animation-name: hinge;
 }
 @keyframes jackInTheBox {
-  from {
+  0% {
     opacity: 0;
-    transform: scale(0.1) rotate(30deg);
+    transform: scale(.1) rotate(30deg);
     transform-origin: center bottom;
   }
 
@@ -1233,11 +1231,10 @@
 .jackInTheBox {
   animation-name: jackInTheBox;
 }
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 @keyframes rollIn {
-  from {
+  0% {
     opacity: 0;
-    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    transform: translate3d(-100%,0,0) rotate(-120deg);
   }
 
   to {
@@ -1249,15 +1246,14 @@
 .rollIn {
   animation-name: rollIn;
 }
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 @keyframes rollOut {
-  from {
+  0% {
     opacity: 1;
   }
 
   to {
     opacity: 0;
-    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+    transform: translate3d(100%,0,0) rotate(120deg);
   }
 }
 
@@ -1265,9 +1261,9 @@
   animation-name: rollOut;
 }
 @keyframes zoomIn {
-  from {
+  0% {
     opacity: 0;
-    transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3,.3,.3);
   }
 
   50% {
@@ -1279,16 +1275,16 @@
   animation-name: zoomIn;
 }
 @keyframes zoomInDown {
-  from {
+  0% {
     opacity: 0;
-    transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    transform: scale3d(.1,.1,.1) translate3d(0,-1000px,0);
+    animation-timing-function: cubic-bezier(.55,.055,.675,.19);
   }
 
   60% {
     opacity: 1;
-    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    transform: scale3d(.475,.475,.475) translate3d(0,60px,0);
+    animation-timing-function: cubic-bezier(.175,.885,.32,1);
   }
 }
 
@@ -1296,16 +1292,16 @@
   animation-name: zoomInDown;
 }
 @keyframes zoomInLeft {
-  from {
+  0% {
     opacity: 0;
-    transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    transform: scale3d(.1,.1,.1) translate3d(-1000px,0,0);
+    animation-timing-function: cubic-bezier(.55,.055,.675,.19);
   }
 
   60% {
     opacity: 1;
-    transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    transform: scale3d(.475,.475,.475) translate3d(10px,0,0);
+    animation-timing-function: cubic-bezier(.175,.885,.32,1);
   }
 }
 
@@ -1313,16 +1309,16 @@
   animation-name: zoomInLeft;
 }
 @keyframes zoomInRight {
-  from {
+  0% {
     opacity: 0;
-    transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    transform: scale3d(.1,.1,.1) translate3d(1000px,0,0);
+    animation-timing-function: cubic-bezier(.55,.055,.675,.19);
   }
 
   60% {
     opacity: 1;
-    transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    transform: scale3d(.475,.475,.475) translate3d(-10px,0,0);
+    animation-timing-function: cubic-bezier(.175,.885,.32,1);
   }
 }
 
@@ -1330,16 +1326,16 @@
   animation-name: zoomInRight;
 }
 @keyframes zoomInUp {
-  from {
+  0% {
     opacity: 0;
-    transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    transform: scale3d(.1,.1,.1) translate3d(0,1000px,0);
+    animation-timing-function: cubic-bezier(.55,.055,.675,.19);
   }
 
   60% {
     opacity: 1;
-    transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    transform: scale3d(.475,.475,.475) translate3d(0,-60px,0);
+    animation-timing-function: cubic-bezier(.175,.885,.32,1);
   }
 }
 
@@ -1347,13 +1343,13 @@
   animation-name: zoomInUp;
 }
 @keyframes zoomOut {
-  from {
+  0% {
     opacity: 1;
   }
 
   50% {
     opacity: 0;
-    transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3,.3,.3);
   }
 
   to {
@@ -1367,15 +1363,15 @@
 @keyframes zoomOutDown {
   40% {
     opacity: 1;
-    transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    transform: scale3d(.475,.475,.475) translate3d(0,-60px,0);
+    animation-timing-function: cubic-bezier(.55,.055,.675,.19);
   }
 
   to {
     opacity: 0;
-    transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
+    transform: scale3d(.1,.1,.1) translate3d(0,2000px,0);
     transform-origin: center bottom;
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    animation-timing-function: cubic-bezier(.175,.885,.32,1);
   }
 }
 
@@ -1385,12 +1381,12 @@
 @keyframes zoomOutLeft {
   40% {
     opacity: 1;
-    transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);
+    transform: scale3d(.475,.475,.475) translate3d(42px,0,0);
   }
 
   to {
     opacity: 0;
-    transform: scale(.1) translate3d(-2000px, 0, 0);
+    transform: scale(.1) translate3d(-2000px,0,0);
     transform-origin: left center;
   }
 }
@@ -1401,12 +1397,12 @@
 @keyframes zoomOutRight {
   40% {
     opacity: 1;
-    transform: scale3d(.475, .475, .475) translate3d(-42px, 0, 0);
+    transform: scale3d(.475,.475,.475) translate3d(-42px,0,0);
   }
 
   to {
     opacity: 0;
-    transform: scale(.1) translate3d(2000px, 0, 0);
+    transform: scale(.1) translate3d(2000px,0,0);
     transform-origin: right center;
   }
 }
@@ -1417,15 +1413,15 @@
 @keyframes zoomOutUp {
   40% {
     opacity: 1;
-    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    transform: scale3d(.475,.475,.475) translate3d(0,60px,0);
+    animation-timing-function: cubic-bezier(.55,.055,.675,.19);
   }
 
   to {
     opacity: 0;
-    transform: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);
+    transform: scale3d(.1,.1,.1) translate3d(0,-2000px,0);
     transform-origin: center bottom;
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    animation-timing-function: cubic-bezier(.175,.885,.32,1);
   }
 }
 
@@ -1433,13 +1429,13 @@
   animation-name: zoomOutUp;
 }
 @keyframes slideInDown {
-  from {
-    transform: translate3d(0, -100%, 0);
+  0% {
+    transform: translate3d(0,-100%,0);
     visibility: visible;
   }
 
   to {
-    transform: translate3d(0, 0, 0);
+    transform: translateZ(0);
   }
 }
 
@@ -1447,13 +1443,13 @@
   animation-name: slideInDown;
 }
 @keyframes slideInLeft {
-  from {
-    transform: translate3d(-100%, 0, 0);
+  0% {
+    transform: translate3d(-100%,0,0);
     visibility: visible;
   }
 
   to {
-    transform: translate3d(0, 0, 0);
+    transform: translateZ(0);
   }
 }
 
@@ -1461,13 +1457,13 @@
   animation-name: slideInLeft;
 }
 @keyframes slideInRight {
-  from {
-    transform: translate3d(100%, 0, 0);
+  0% {
+    transform: translate3d(100%,0,0);
     visibility: visible;
   }
 
   to {
-    transform: translate3d(0, 0, 0);
+    transform: translateZ(0);
   }
 }
 
@@ -1475,13 +1471,13 @@
   animation-name: slideInRight;
 }
 @keyframes slideInUp {
-  from {
-    transform: translate3d(0, 100%, 0);
+  0% {
+    transform: translate3d(0,100%,0);
     visibility: visible;
   }
 
   to {
-    transform: translate3d(0, 0, 0);
+    transform: translateZ(0);
   }
 }
 
@@ -1489,13 +1485,13 @@
   animation-name: slideInUp;
 }
 @keyframes slideOutDown {
-  from {
-    transform: translate3d(0, 0, 0);
+  0% {
+    transform: translateZ(0);
   }
 
   to {
     visibility: hidden;
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0,100%,0);
   }
 }
 
@@ -1503,13 +1499,13 @@
   animation-name: slideOutDown;
 }
 @keyframes slideOutLeft {
-  from {
-    transform: translate3d(0, 0, 0);
+  0% {
+    transform: translateZ(0);
   }
 
   to {
     visibility: hidden;
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%,0,0);
   }
 }
 
@@ -1517,13 +1513,13 @@
   animation-name: slideOutLeft;
 }
 @keyframes slideOutRight {
-  from {
-    transform: translate3d(0, 0, 0);
+  0% {
+    transform: translateZ(0);
   }
 
   to {
     visibility: hidden;
-    transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%,0,0);
   }
 }
 
@@ -1531,13 +1527,13 @@
   animation-name: slideOutRight;
 }
 @keyframes slideOutUp {
-  from {
-    transform: translate3d(0, 0, 0);
+  0% {
+    transform: translateZ(0);
   }
 
   to {
     visibility: hidden;
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(0,-100%,0);
   }
 }
 
