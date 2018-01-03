@@ -30,7 +30,7 @@ var app = {
     this.receivedEvent('deviceready');
 
     //Kamera
-    document.getElementById("kamera").addEventListener("click", cameraTakePicture);
+    document.getElementById("kamerapoi").addEventListener("click", cameraTakePicture);
 
     // Kamera
     function cameraTakePicture() {
@@ -48,11 +48,11 @@ var app = {
       }
 
       function onFail(message) {
-        alert('Fehlgeschlagen weil: ' + message);
+        //alert('Fehlgeschlagen weil: ' + message);
       }
 
       /* Weiterleitung nach erfolgreichem Foto */
-      window.location.href = "admin05.html";
+      window.location.href = "admin02.html";
 
     }
   },
