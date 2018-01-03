@@ -16,10 +16,13 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-*, *:before, *:after{
+*,
+*:after,
+*:before {
   box-sizing: border-box;
 }
- * {
+
+* {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
@@ -85,7 +88,6 @@ h1 {
 }
 
 .event.listening {
-
   display: block;
 }
 
@@ -123,46 +125,47 @@ h1 {
   animation: fade 1ms infinite;
   -webkit-animation: fade 1ms infinite;
 }
+/*
+* Customizing
+*/
 /*Button unter Google Maps Karte*/
 #startpunktSetzen {
   background-color: #EAEAEA;
   text-align: center;
   margin-top: 360px;
   margin-bottom: 20px;
-border-radius: 2.5px;
-font-weight: bold;
-font-size: 1.0rem;
-width: 140px;
-color: black;
+  border-radius: 2.5px;
+  font-weight: bold;
+  font-size: 1.0rem;
+  width: 140px;
+  color: black;
 }
-
-
 /*Toggle Button*/
 .hide {
   display: none;
 }
 
+#weiter {
+  background-color: #EAEAEA;
+  text-align: center;
+  border-radius: 2.5px;
+  font-weight: bold;
+  font-size: 1.0rem;
+  width: 140px;
+  color: black;
+}
 
-
-h4{
+h4 {
   font-weight: normal;
   font-size: 1.4rem;
   margin-bottom: 30px;
   margin-top: 30px;
 }
 
-#weiter {
-  background-color: #EAEAEA;
-  text-align: center;
-border-radius: 2.5px;
-font-weight: bold;
-font-size: 1.0rem;
-width: 140px;
-color: black;
-
-}
-
 p {
-  font-size: 1rem;
-  line-height: 1rem;
+  margin-top: 20px;
+  font-style: italic;
+  color: #EAEAEA;
+  font-size: 0.9rem;
+  line-height: 0.1rem;
 }

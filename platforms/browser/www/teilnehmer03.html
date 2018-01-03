@@ -16,23 +16,23 @@
     <div class="container">
       <div class="row">
         <div class="col-sm">
-          <h2>Hinweise scannen</h2>
 
-          <p>Wenn du denkst in der Nähe eines Hinweises (POI) zu sein, aktiviere die Kamera und versuche das 2D-Objekt zu erfassen. Der Hinweis wird angezeigt, wenn du die Kamera in die richtige Richtung hälst.
-          </p>
-          <p>Hinweise werden in Form von einem Text, einem Bild oder einem Video eingeblendet</p>
+          <h4>Wenn du denkst in der Nähe eines Hinweises (POI) zu sein, aktiviere die Kamera und versuche das 2D-Objekt zu erfassen. Der Hinweis wird angezeigt, wenn du die Kamera in die richtige Richtung hälst.</h4>
+          <h4>Hinweise werden in Form von einem Text, einem Bild oder einem Video eingeblendet</h4>
 
           <div id="deviceready">
             <p class="event listening"></p>
             <p class="event received"></p>
             <button class="primary" id="launch-demo">Scan starten</button>
           </div>
-
+          <button id="startpage" class="tertiary" onclick="exitToStartPage()">Startseite</button>
+          <button id="exit" class="secondary" onclick="exitFromApp()">App beenden</button>
         </div>
       </div>
     </div>
 
     <script type="text/javascript" src="js/wikitude.js"></script>
+    <script type="text/javascript " src="js/copyid.js "></script>
     <!-- phantom library, needed for Cordova api calls, added during build -->
     <script type="text/javascript" src="cordova.js"></script>
 

@@ -16,10 +16,13 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-*, *:before, *:after{
+*,
+*:after,
+*:before {
   box-sizing: border-box;
 }
- * {
+
+* {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
@@ -122,28 +125,31 @@ h1 {
   animation: fade 1ms infinite;
   -webkit-animation: fade 1ms infinite;
 }
+/*
+* Customizing
+*/
 /*Button unter Google Maps Karte*/
-#TxtErfassen, #kamera, #einladung{
-background-color: #EAEAEA;
-text-align: center;
-margin-bottom: 20px;
-border-radius: 2.5px;
-font-weight: bold;
-font-size: 1.0rem;
-width: 140px;
-color: black;
+#TxtErfassen,
+#einladung,
+#kamera {
+  background-color: #EAEAEA;
+  text-align: center;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 2.5px;
+  font-weight: bold;
+  font-size: 1.0rem;
+  width: 140px;
+  color: black;
 }
 
-
-
-h4{
+h4 {
   font-weight: normal;
   font-size: 1.4rem;
   margin-bottom: 30px;
   margin-top: 30px;
 }
 
-h3{
+h3 {
   margin-top: 40px;
 }
-

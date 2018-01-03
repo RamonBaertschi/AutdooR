@@ -17,13 +17,14 @@
     <div class="container">
       <div class="row">
         <div class="col-sm">
-          <h4>Kopiere die Spiel-Nummer und sende sie den gewünschten Teilnehmer.</h4>
+          <h4>Kopiere die Spiel-Nummer und sende diese den gewünschten Teilnehmer.</h4>
           <form id="form01">
-            <label id="label01">Test</label>
+            <label id="label01">Spiel-Nummer:</label>
             <input type="text" placeholder="Spiel-Nummer" id="spielNo" readonly="readonly">
             <button id="copy" class="primary" onclick="copySpiel()">Kopieren</button>
           </form>
-          <button id="exit" class="primary" onclick="exitFromApp()">App beenden</button>
+          <button id="startpage" class="tertiary" onclick="exitToStartPage()">Startseite</button>
+          <button id="exit" class="secondary" onclick="exitFromApp()">App beenden</button>
         </div>
       </div>
     </div>

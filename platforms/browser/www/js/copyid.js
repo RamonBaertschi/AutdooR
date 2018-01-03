@@ -5,7 +5,10 @@ function copySpiel() {
   alert("Herzlichen Glückwunsch du hast es geschafft. Spiel-Nummer kopiert: " + copyText.value);
 }
 
-function exitFromApp()
-{
-     navigator.app.exitApp();
+function exitToStartPage() {
+  window.location.href = "index.html";
+}
+
+function exitFromApp() {
+  navigator.app.exitApp();
 }
