@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/mini-default.css">
@@ -12,21 +13,22 @@
   </head>
 
   <body>
+    <div class="animated fadeInRight">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
 
-    <div class="container animated fadeInRight">
-      <div class="row">
-        <div class="col-sm">
+            <h4>Wenn du denkst, in der Nähe des POI zu sein, klicke auf den Button und versuche das Objekt zu erfassen. Der Hinweis wird angezeigt, wenn du die Smartphone Kamera auf das Objekt hälst.</h4>
+            <h4>Hinweise werden in Form von einem Text, einem Bild oder einem Video eingeblendet über dem Objekt eingeblendet</h4>
 
-          <h4>Wenn du denkst, in der Nähe des POI zu sein, klicke auf den Button und versuche das Objekt zu erfassen. Der Hinweis wird angezeigt, wenn du die Smartphone Kamera auf das Objekt hälst.</h4>
-          <h4>Hinweise werden in Form von einem Text, einem Bild oder einem Video eingeblendet über dem Objekt eingeblendet</h4>
-
-          <div id="deviceready">
-            <p class="event listening"></p>
-            <p class="event received"></p>
-            <button class="primary" id="launch-demo">POI scannen</button>
+            <div id="deviceready">
+              <p class="event listening"></p>
+              <p class="event received"></p>
+              <button class="primary" id="launch-demo">POI scannen</button>
+            </div>
+            <button id="startpage" class="tertiary" onclick="exitToStartPage()">Startseite</button>
+            <button id="exit" class="secondary" onclick="exitFromApp()">App beenden</button>
           </div>
-          <button id="startpage" class="tertiary" onclick="exitToStartPage()">Startseite</button>
-          <button id="exit" class="secondary" onclick="exitFromApp()">App beenden</button>
         </div>
       </div>
     </div>
