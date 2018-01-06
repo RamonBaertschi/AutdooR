@@ -4,7 +4,7 @@
     <description>
         Augmented Reality Smartphone App
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
+    <author email="zbwfinal@gmail.com">
         Ramon Beartschi, Fabio Pitta
     </author>
     <content src="index.html" />
@@ -15,6 +15,4 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <activity android:configChanges="orientation|keyboardHidden" android:screenOrientation="portrait">
-    </activity>
 </widget>
