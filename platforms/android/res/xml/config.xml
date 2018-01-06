@@ -10,12 +10,12 @@
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
-    <name>fabruzzStudio</name>
+    <name>App Prototyp</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Augmented Reality Smartphone App
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+        Ramon Beartschi, Fabio Pitta
     </author>
     <content src="index.html" />
     <access origin="*" />

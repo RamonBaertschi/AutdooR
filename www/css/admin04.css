@@ -143,10 +143,11 @@ h1 {
 }
 
 form {
-  height: 350px;
+  height: 370px;
   border-style: none;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 2.5px;
+  margin-top: 30px;
 }
 
 #label01 {
