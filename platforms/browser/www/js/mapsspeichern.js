@@ -80,7 +80,7 @@ function initAutocomplete() {
 
       // Koordinaten in Firebase speichern
       document.getElementById("startpunktSetzen").addEventListener("click", function() {
-        firestore.collection("spiel").doc("test").set({
+        firestore.collection("arapp").doc("koordinaten").set({
           koordinaten: {
             Latitude: place.geometry.location.lat(),
             Longitude: place.geometry.location.lng(),

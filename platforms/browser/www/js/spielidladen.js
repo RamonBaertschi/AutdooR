@@ -11,7 +11,7 @@ firebase.initializeApp(config);
 
 var firestore = firebase.firestore();
 
-firestore.collection("spiel").doc("test").onSnapshot(function(doc) {
+firestore.collection("arapp").doc("koordinaten").onSnapshot(function(doc) {
   const myData = doc.data();
   document.getElementById("spielNo").value = myData.koordinaten.id;
   // alert(myData.koordinaten.id);

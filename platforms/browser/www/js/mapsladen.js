@@ -12,7 +12,7 @@ firebase.initializeApp(config);
 var firestore = firebase.firestore();
 
 function getCoords() {
-  firestore.collection("spiel").doc("test").onSnapshot(function(doc) {
+  firestore.collection("arapp").doc("koordinaten").onSnapshot(function(doc) {
     myData = doc.data();
     var x = myData.koordinaten.Latitude;
     var y = myData.koordinaten.Longitude;
