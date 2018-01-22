@@ -14,5 +14,4 @@ var firestore = firebase.firestore();
 firestore.collection("arapp").doc("koordinaten").onSnapshot(function(doc) {
   const myData = doc.data();
   document.getElementById("spielNo").value = myData.koordinaten.id;
-  // alert(myData.koordinaten.id);
 })
